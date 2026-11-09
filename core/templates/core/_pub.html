@@ -1,0 +1,5 @@
+<li class="pub">
+  <p class="pub-title">{% if pub.url %}<a href="{{ pub.url }}" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+  <p class="pub-meta">{{ pub.authors }}{% if pub.venue %}. <em>{{ pub.venue }}</em>{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}</p>
+  {% if pub.citations %}<p class="pub-cites">Cited by {{ pub.citations }}</p>{% endif %}
+</li>

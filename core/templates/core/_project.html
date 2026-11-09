@@ -1,0 +1,9 @@
+<article class="card project">
+  {% if p.image %}<img class="card-image" src="{{ p.image.url }}" alt="" loading="lazy">{% else %}<div class="card-image card-image-placeholder" aria-hidden="true">Project image</div>{% endif %}
+  <div class="card-body">
+    {% if p.start_year or p.funder %}<p class="meta">{% if p.start_year %}{{ p.start_year }}–{{ p.end_year|default:"present" }}{% if p.funder %} · {% endif %}{% endif %}{{ p.funder }}</p>{% endif %}
+    <h3>{% if p.link %}<a href="{{ p.link }}" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    {% if p.role %}<p class="role-line">{{ p.role }}</p>{% endif %}
+    {{ p.summary|linebreaks }}
+  </div>
+</article>

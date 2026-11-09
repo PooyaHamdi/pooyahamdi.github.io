@@ -1,0 +1,7 @@
+<ul class="links">
+  {% if profile.scholar_url %}<li><a href="{{ profile.scholar_url }}" rel="noopener">Google Scholar</a></li>{% endif %}
+  {% if profile.linkedin_url %}<li><a href="{{ profile.linkedin_url }}" rel="noopener">LinkedIn</a></li>{% endif %}
+  {% if profile.institution_url %}<li><a href="{{ profile.institution_url }}" rel="noopener">RWTH profile</a></li>{% endif %}
+  {% if profile.email %}<li><a href="mailto:{{ profile.email }}">Email</a></li>{% endif %}
+  {% if profile.cv %}<li><a href="{{ profile.cv.url }}">Download CV</a></li>{% endif %}
+</ul>

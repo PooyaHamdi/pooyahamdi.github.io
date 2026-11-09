@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+{% block title %}Publications · {{ profile.name }}{% endblock %}
+{% block content %}
+<header class="page-head">
+  <h1>Publications</h1>
+  <p class="lede">{% if stats.citations %}{{ stats.citations }} citations · h-index {{ stats.h_index }} · {% endif %}{% if profile.scholar_url %}<a href="{{ profile.scholar_url }}" rel="noopener">Full list on Google Scholar →</a>{% endif %}</p>
+</header>
+
+{% if featured %}
+<section aria-labelledby="sel-h">
+  <h2 id="sel-h">Selected publications</h2>
+  <ol class="pubs">{% for pub in featured %}{% include "core/_pub.html" %}{% endfor %}</ol>
+</section>
+{% endif %}
+
+<section aria-labelledby="all-h">
+  <h2 id="all-h">All publications</h2>
+  {% regroup publications by year as by_year %}
+  {% for group in by_year %}
+    <h3 class="year-head">{{ group.grouper|default:"Undated" }}</h3>
+    <ol class="pubs">{% for pub in group.list %}{% include "core/_pub.html" %}{% endfor %}</ol>
+  {% empty %}
+    <p class="note">No publications yet.</p>
+  {% endfor %}
+</section>
+{% endblock %}

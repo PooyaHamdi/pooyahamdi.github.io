@@ -1,0 +1,28 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ profile.name }}{% endblock %}</title>
+  <meta name="description" content="{{ profile.name }}, {{ profile.title }}, {{ profile.affiliation }}">
+  <link rel="stylesheet" href="{% static 'core/site.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="{% url 'home' %}">{{ profile.name }}</a>
+    <nav aria-label="Main">
+      <a href="{% url 'home' %}"{% if nav == "about" %} aria-current="page"{% endif %}>About</a>
+      <a href="{% url 'research' %}"{% if nav == "research" %} aria-current="page"{% endif %}>Research</a>
+      <a href="{% url 'publications' %}"{% if nav == "publications" %} aria-current="page"{% endif %}>Publications</a>
+      <a href="{% url 'team' %}"{% if nav == "team" %} aria-current="page"{% endif %}>Team</a>
+    </nav>
+  </header>
+
+  <main>{% block content %}{% endblock %}</main>
+
+  <footer class="site-footer">
+    <p>{{ profile.name }}{% if profile.affiliation %} · {{ profile.affiliation }}{% endif %}</p>
+    <p>{% if profile.email %}<a href="mailto:{{ profile.email }}">{{ profile.email }}</a> · {% endif %}© {% now "Y" %}</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{% extends "core/base.html" %}{% load static %}
+{% block content %}
+<section class="intro">
+  <div class="portrait">
+    {% if profile.photo %}
+      <img src="{{ profile.photo.url }}" alt="Portrait of {{ profile.name }}">
+    {% else %}
+      <div class="portrait-placeholder" aria-hidden="true"></div>
+    {% endif %}
+  </div>
+  <div class="intro-text">
+    <h1>{{ profile.name }}</h1>
+    <p class="role">{{ profile.title }}</p>
+    <p class="affiliation">{{ profile.affiliation }}</p>
+    {% if profile.tagline %}<p class="tagline">{{ profile.tagline }}</p>{% endif %}
+    {% include "core/_links.html" %}
+  </div>
+</section>
+
+<section class="prose bio">
+  {{ profile.bio|linebreaks }}
+</section>
+
+{% if education %}
+<section class="education" aria-labelledby="edu-h">
+  <h2 id="edu-h">Education</h2>
+  <ol class="ladder">
+    {% for e in education %}
+    <li>
+      <span class="years">{% if e.start_year %}{{ e.start_year }}–{% endif %}{{ e.end_year|default:"present" }}</span>
+      <h3>{{ e.degree }}{% if e.field %}, {{ e.field }}{% endif %}</h3>
+      <p class="where">{{ e.institution }}{% if e.location %}, {{ e.location }}{% endif %}</p>
+      {% if e.thesis %}<p class="thesis">Thesis: <em>{{ e.thesis }}</em></p>{% endif %}
+      {% if e.advisor %}<p class="advisor">Supervisor: {{ e.advisor }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% if experience %}
+<section class="experience" aria-labelledby="exp-h">
+  <h2 id="exp-h">Career</h2>
+  <ol class="ladder">
+    {% for x in experience %}
+    <li>
+      <span class="years">{% if x.start_year %}{{ x.start_year }}–{% endif %}{{ x.end_year|default:"present" }}</span>
+      <h3>{{ x.role }}</h3>
+      <p class="where">{{ x.organization }}{% if x.location %}, {{ x.location }}{% endif %}</p>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% if stats.citations %}
+<section class="citations" aria-labelledby="citations-h">
+  <div class="section-head">
+    <h2 id="citations-h">Citations</h2>
+    {% if profile.scholar_url %}<a class="small-link" href="{{ profile.scholar_url }}" rel="noopener">Google Scholar profile →</a>{% endif %}
+  </div>
+  <dl class="stat-tiles">
+    <div class="stat"><dt>Citations</dt><dd>{{ stats.citations }}</dd>{% if stats.recent_since %}<span class="stat-sub">{{ stats.citations_recent }} since {{ stats.recent_since }}</span>{% endif %}</div>
+    <div class="stat"><dt>h-index</dt><dd>{{ stats.h_index }}</dd>{% if stats.recent_since %}<span class="stat-sub">{{ stats.h_index_recent }} since {{ stats.recent_since }}</span>{% endif %}</div>
+    <div class="stat"><dt>i10-index</dt><dd>{{ stats.i10_index }}</dd>{% if stats.recent_since %}<span class="stat-sub">{{ stats.i10_index_recent }} since {{ stats.recent_since }}</span>{% endif %}</div>
+  </dl>
+
+  {% if bars %}
+  <figure class="chart">
+    <figcaption>Citations per year</figcaption>
+    <div class="chart-wrap">
+      <svg viewBox="0 0 {{ chart.w }} {{ chart.h }}" role="img" aria-label="Bar chart of citations per year">
+        <line class="baseline" x1="0" x2="{{ chart.w }}" y1="{{ chart.h }}" y2="{{ chart.h }}"/>
+        {% for b in bars %}
+        <g class="bar" data-year="{{ b.year }}" data-count="{{ b.count }}" data-left="{{ b.left }}" data-top="{{ b.top }}" tabindex="0">
+          <rect class="hit" x="{{ b.slot_x }}" y="0" width="{{ b.slot_w }}" height="{{ chart.h }}"/>
+          {% if b.path %}<path class="mark" d="{{ b.path }}"/>{% endif %}
+        </g>
+        {% endfor %}
+      </svg>
+      {% with last=bars|last %}<span class="value-label" style="left:{{ last.left }}%;top:{{ last.top }}%">{{ last.count }}</span>{% endwith %}
+      <div class="tooltip" role="status" hidden></div>
+    </div>
+    <div class="axis" aria-hidden="true">
+      {% for b in bars %}<span class="{% if not b.label_year %}hidden{% elif not b.label_mobile %}minor{% endif %}" style="left:{{ b.left }}%">{{ b.year }}</span>{% endfor %}
+    </div>
+    <details class="chart-table">
+      <summary>Show as table</summary>
+      <table>
+        <thead><tr><th scope="col">Year</th><th scope="col">Citations</th></tr></thead>
+        <tbody>{% for b in bars %}<tr><td>{{ b.year }}</td><td>{{ b.count }}</td></tr>{% endfor %}</tbody>
+      </table>
+    </details>
+  </figure>
+  {% endif %}
+  {% if stats.last_updated %}<p class="note">Updated {{ stats.last_updated|date:"j F Y" }}.</p>{% endif %}
+</section>
+{% endif %}
+<script src="{% static 'core/chart.js' %}" defer></script>
+{% endblock %}

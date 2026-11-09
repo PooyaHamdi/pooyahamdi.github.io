@@ -1,0 +1,24 @@
+{% extends "core/base.html" %}
+{% block title %}Research · {{ profile.name }}{% endblock %}
+{% block content %}
+<header class="page-head">
+  <h1>Research</h1>
+  {% if profile.interests_list %}
+  <ul class="tags">{% for i in profile.interests_list %}<li>{{ i }}</li>{% endfor %}</ul>
+  {% endif %}
+</header>
+
+{% if ongoing %}
+<section aria-labelledby="ongoing-h">
+  <h2 id="ongoing-h">Current projects</h2>
+  <div class="cards">{% for p in ongoing %}{% include "core/_project.html" %}{% endfor %}</div>
+</section>
+{% endif %}
+{% if completed %}
+<section aria-labelledby="completed-h">
+  <h2 id="completed-h">Completed projects</h2>
+  <div class="cards">{% for p in completed %}{% include "core/_project.html" %}{% endfor %}</div>
+</section>
+{% endif %}
+{% if not ongoing and not completed %}<p class="note">Projects will be listed here soon.</p>{% endif %}
+{% endblock %}

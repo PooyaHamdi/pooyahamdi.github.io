@@ -1,0 +1,37 @@
+{% extends "core/base.html" %}
+{% block title %}Team · {{ profile.name }}{% endblock %}
+{% block content %}
+<header class="page-head">
+  <h1>Team</h1>
+  <p class="lede">Students and researchers I currently supervise or co-supervise.{% if profile.supervision_summary %} {{ profile.supervision_summary }}{% endif %}</p>
+</header>
+
+<section aria-labelledby="current-h">
+  <h2 id="current-h">Current students</h2>
+  {% if current %}
+  <div class="people">
+    {% for s in current %}
+    <article class="person">
+      {% if s.photo %}<img src="{{ s.photo.url }}" alt="" loading="lazy">{% else %}<div class="avatar" aria-hidden="true">{{ s.initials }}</div>{% endif %}
+      <h3>{% if s.link %}<a href="{{ s.link }}" rel="noopener">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h3>
+      <p class="meta">{{ s.get_level_display }}{% if s.start_year %} · since {{ s.start_year }}{% endif %}</p>
+      {% if s.topic %}<p class="topic">{{ s.topic }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="note">No current students listed.</p>
+  {% endif %}
+</section>
+
+{% if alumni %}
+<section aria-labelledby="alumni-h">
+  <h2 id="alumni-h">Alumni</h2>
+  <ul class="alumni">
+    {% for s in alumni %}
+    <li><strong>{{ s.name }}</strong>, {{ s.get_level_display }}{% if s.end_year %} ({{ s.end_year }}){% endif %}{% if s.topic %}: {{ s.topic }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}
