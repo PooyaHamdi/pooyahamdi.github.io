@@ -21,6 +21,21 @@
   {{ profile.bio|linebreaks }}
 </section>
 
+{% if experience %}
+<section class="experience" aria-labelledby="exp-h">
+  <h2 id="exp-h">Career</h2>
+  <ol class="ladder">
+    {% for x in experience %}
+    <li>
+      <span class="years">{% if x.start_year %}{{ x.start_year }}–{% endif %}{{ x.end_year|default:"present" }}</span>
+      <h3>{{ x.role }}</h3>
+      <p class="where">{{ x.organization }}{% if x.location %}, {{ x.location }}{% endif %}</p>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
 {% if education %}
 <section class="education" aria-labelledby="edu-h">
   <h2 id="edu-h">Education</h2>
@@ -32,21 +47,6 @@
       <p class="where">{{ e.institution }}{% if e.location %}, {{ e.location }}{% endif %}</p>
       {% if e.thesis %}<p class="thesis">Thesis: <em>{{ e.thesis }}</em></p>{% endif %}
       {% if e.advisor %}<p class="advisor">Supervisor: {{ e.advisor }}</p>{% endif %}
-    </li>
-    {% endfor %}
-  </ol>
-</section>
-{% endif %}
-
-{% if experience %}
-<section class="experience" aria-labelledby="exp-h">
-  <h2 id="exp-h">Career</h2>
-  <ol class="ladder">
-    {% for x in experience %}
-    <li>
-      <span class="years">{% if x.start_year %}{{ x.start_year }}–{% endif %}{{ x.end_year|default:"present" }}</span>
-      <h3>{{ x.role }}</h3>
-      <p class="where">{{ x.organization }}{% if x.location %}, {{ x.location }}{% endif %}</p>
     </li>
     {% endfor %}
   </ol>
