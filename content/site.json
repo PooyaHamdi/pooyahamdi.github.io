@@ -1,0 +1,473 @@
+[
+{
+  "model": "core.profile",
+  "pk": 1,
+  "fields": {
+    "name": "Dr. Pooya Hamdi",
+    "title": "Senior Scientist & Leader of the Rock Mechanics Group",
+    "affiliation": "Chair of Engineering Geology and Hydrogeology, RWTH Aachen University",
+    "tagline": "Rock mechanics · Slope stability & landslides · Numerical modelling",
+    "bio": "I am a Senior Scientist and Leader of the Rock Mechanics Group at the Chair of Engineering Geology and Hydrogeology, RWTH Aachen University. My research focuses on rock mechanics, rock engineering design and numerical modelling, applied to rock slope and landslide analysis and to underground infrastructure, from the laboratory to the in-situ scale.\n\nI have been principal investigator and co-investigator on national and international projects on deep geological repositories, rock slope stability and landslide analysis, geohazard assessment and underground excavation design.\n\nI teach Soil & Rock Mechanics, Landslides and Rock Slope Analysis, Underground Excavation, Dams and Hydroelectric Power Plants, and field excursions. I am a member of the International Society for Rock Mechanics (ISRM) and the American Rock Mechanics Association (ARMA), and a reviewer for Rock Mechanics and Rock Engineering, Landslides, and the Journal of Rock Mechanics and Geotechnical Engineering.",
+    "research_interests": "Rock mechanics, Rock engineering design, Numerical modelling, Rock slope stability and landslides, Underground infrastructure, Deep geological repositories",
+    "photo": "profile/IMG_2164.jpg",
+    "email": "hamdi@lih.rwth-aachen.de",
+    "linkedin_url": "https://www.linkedin.com/in/pooyahamdi",
+    "scholar_url": "https://scholar.google.com/citations?user=QqegjnAAAAAJ&hl=en",
+    "orcid_url": "https://orcid.org/0000-0002-3786-7914",
+    "institution_url": "https://www.lih.rwth-aachen.de/cms/lih/der-lehrstuhl/team/ingenieurgeologie/~rvvd/pooya-hamdi/?allou=1&lidx=1",
+    "cv": "",
+    "supervision_summary": "Over 15 MSc and BSc theses (co-)supervised since 2018."
+  }
+},
+{
+  "model": "core.scholarstats",
+  "pk": 1,
+  "fields": {
+    "citations": 575,
+    "citations_recent": 418,
+    "h_index": 12,
+    "h_index_recent": 11,
+    "i10_index": 14,
+    "i10_index_recent": 11,
+    "recent_since": 2021,
+    "citations_per_year": {
+      "2013": 2,
+      "2014": 5,
+      "2015": 8,
+      "2016": 14,
+      "2017": 18,
+      "2018": 26,
+      "2019": 24,
+      "2020": 54,
+      "2021": 36,
+      "2022": 49,
+      "2023": 64,
+      "2024": 69,
+      "2025": 82,
+      "2026": 118
+    },
+    "last_updated": "2026-11-02T14:31:52.484Z"
+  }
+},
+{
+  "model": "core.education",
+  "pk": 4,
+  "fields": {
+    "degree": "PhD",
+    "field": "Rock Mechanics / Geotechnics",
+    "institution": "Simon Fraser University",
+    "location": "Vancouver, Canada",
+    "start_year": 2011,
+    "end_year": 2015,
+    "thesis": "",
+    "advisor": "",
+    "order": 1
+  }
+},
+{
+  "model": "core.education",
+  "pk": 5,
+  "fields": {
+    "degree": "MSc",
+    "field": "Geotechnical Engineering",
+    "institution": "Tafresh University, Department of Civil Engineering",
+    "location": "Iran",
+    "start_year": 2008,
+    "end_year": 2010,
+    "thesis": "",
+    "advisor": "",
+    "order": 2
+  }
+},
+{
+  "model": "core.education",
+  "pk": 6,
+  "fields": {
+    "degree": "BSc",
+    "field": "Civil Engineering",
+    "institution": "Urmia University, Department of Civil Engineering",
+    "location": "Iran",
+    "start_year": 2004,
+    "end_year": 2008,
+    "thesis": "",
+    "advisor": "",
+    "order": 3
+  }
+},
+{
+  "model": "core.experience",
+  "pk": 1,
+  "fields": {
+    "role": "Senior Scientist, Leader of the Rock Mechanics Group and Lecturer",
+    "organization": "RWTH Aachen University",
+    "location": "Aachen, Germany",
+    "start_year": 2018,
+    "end_year": null,
+    "order": 1
+  }
+},
+{
+  "model": "core.experience",
+  "pk": 2,
+  "fields": {
+    "role": "Rock Mechanics Engineer",
+    "organization": "Golder Associates Ltd.",
+    "location": "Vancouver, Canada",
+    "start_year": 2015,
+    "end_year": 2018,
+    "order": 2
+  }
+},
+{
+  "model": "core.experience",
+  "pk": 3,
+  "fields": {
+    "role": "Research Assistant",
+    "organization": "Simon Fraser University",
+    "location": "Vancouver, Canada",
+    "start_year": 2011,
+    "end_year": 2015,
+    "order": 3
+  }
+},
+{
+  "model": "core.experience",
+  "pk": 4,
+  "fields": {
+    "role": "Research Assistant",
+    "organization": "Tafresh University",
+    "location": "Iran",
+    "start_year": 2008,
+    "end_year": 2010,
+    "order": 4
+  }
+},
+{
+  "model": "core.project",
+  "pk": 4,
+  "fields": {
+    "title": "Progressive Excavation Disturbance Zone Evolution during and Post Mine-by Tunnelling (PRECODE)",
+    "summary": "A 100 m experimental tunnel branching off the Bedretto tunnel in Ticino, Switzerland, instrumented to monitor strain, pore pressure and micro-seismicity. The project studies how the excavation damage zone forms and evolves, long-term fracture propagation, permeability changes and the impact on fault zones. Partners: York University, Dalhousie University, ETH Zurich and BGE Tech.",
+    "image": "",
+    "role": "Principal Investigator (with Florian Amann)",
+    "funder": "Bundesgesellschaft für Endlagerung (BGE)",
+    "start_year": 2021,
+    "end_year": 2024,
+    "status": "ongoing",
+    "link": "https://www.lih.rwth-aachen.de/cms/LIH/Forschung/Ingenieurgeologie/Aktuelle-Projekte/~pxmun/Progressive-Entwicklung-der-Auflockerung/1/?lidx=1",
+    "order": 1
+  }
+},
+{
+  "model": "core.project",
+  "pk": 5,
+  "fields": {
+    "title": "Understanding Failure Mechanism of Non-Persistent Discontinuities Using 3D-Printed Synthetic Rock Mass",
+    "summary": "Laboratory tests on 3D-printed synthetic rock mass samples with known joint configurations, used to calibrate numerical models and develop a constitutive model for rock mass strength. In collaboration with GeoPrint at the University of Alberta, Canada.",
+    "image": "",
+    "role": "Principal Investigator (with Florian Amann)",
+    "funder": "German Research Foundation (DFG)",
+    "start_year": 2021,
+    "end_year": 2024,
+    "status": "ongoing",
+    "link": "https://www.lih.rwth-aachen.de/cms/LIH/Forschung/Ingenieurgeologie/Aktuelle-Projekte/~pekiz/Verstaendnis-von-Versagensmechanismen-vo/?lidx=1",
+    "order": 2
+  }
+},
+{
+  "model": "core.project",
+  "pk": 6,
+  "fields": {
+    "title": "Landslide Dam Properties and Stability (LADY)",
+    "summary": "Why do some landslide dams remain stable for thousands of years while others fail within months? LADY combines dam mapping, lake water-balance analysis and numerical stability simulations to test a new hypothesis.",
+    "image": "",
+    "role": "Principal Investigator (with Anja Dufresne and Florian Amann)",
+    "funder": "German Research Foundation (DFG)",
+    "start_year": null,
+    "end_year": null,
+    "status": "ongoing",
+    "link": "https://www.lih.rwth-aachen.de/go/id/dalko/lidx/1",
+    "order": 3
+  }
+},
+{
+  "model": "core.project",
+  "pk": 7,
+  "fields": {
+    "title": "Long-term monitoring of unstable rock slopes in a permafrost environment in Canton of Glarus, Switzerland",
+    "summary": "",
+    "image": "",
+    "role": "",
+    "funder": "",
+    "start_year": null,
+    "end_year": null,
+    "status": "ongoing",
+    "link": "",
+    "order": 4
+  }
+},
+{
+  "model": "core.project",
+  "pk": 8,
+  "fields": {
+    "title": "Einstein Telescope EMR Site & Technology (E-TEST)",
+    "summary": "Feasibility study and geological inventory of the subsurface in the Euregio Meuse-Rhine to find a site for the Einstein Telescope gravitational-wave observatory. Led by the University of Liège with 11 universities and institutions from Belgium, the Netherlands and Germany.",
+    "image": "",
+    "role": "Principal Investigator at RWTH (with Florian Amann)",
+    "funder": "Interreg V-A Euregio Meuse-Rhine",
+    "start_year": 2020,
+    "end_year": 2023,
+    "status": "completed",
+    "link": "https://www.lih.rwth-aachen.de/go/id/gtwmg/lidx/1",
+    "order": 5
+  }
+},
+{
+  "model": "core.project",
+  "pk": 9,
+  "fields": {
+    "title": "Rock Slope Response to Glacier Retreat (Grewingk Glacier and Lake, Alaska)",
+    "summary": "",
+    "image": "",
+    "role": "Principal Investigator (with Anja Dufresne and Florian Amann)",
+    "funder": "German Research Foundation (DFG)",
+    "start_year": 2020,
+    "end_year": 2023,
+    "status": "completed",
+    "link": "https://www.lih.rwth-aachen.de/go/id/qwpq/lidx/1",
+    "order": 6
+  }
+},
+{
+  "model": "core.project",
+  "pk": 10,
+  "fields": {
+    "title": "Multidisciplinary Slope Stability Analysis, Hazard Assessment and Effective Mitigation Measures for Areas with Cultural and Social Significance",
+    "summary": "",
+    "image": "",
+    "role": "Principal Investigator",
+    "funder": "German Research Foundation (DFG)",
+    "start_year": null,
+    "end_year": null,
+    "status": "completed",
+    "link": "",
+    "order": 7
+  }
+},
+{
+  "model": "core.project",
+  "pk": 11,
+  "fields": {
+    "title": "Material Approach for Opalinus Clay",
+    "summary": "Development and validation of a hydro-mechanical constitutive model for Opalinus Clay, based on laboratory triaxial tests and implemented in MOOSE.",
+    "image": "",
+    "role": "",
+    "funder": "Swiss Federal Nuclear Safety Inspectorate (ENSI)",
+    "start_year": 2018,
+    "end_year": 2021,
+    "status": "completed",
+    "link": "https://www.lih.rwth-aachen.de/go/id/rdsc/lidx/1",
+    "order": 8
+  }
+},
+{
+  "model": "core.student",
+  "pk": 5,
+  "fields": {
+    "name": "TODO Student One",
+    "level": "phd",
+    "topic": "TODO: research topic",
+    "start_year": 2023,
+    "end_year": null,
+    "photo": "",
+    "status": "current",
+    "link": "",
+    "order": 1
+  }
+},
+{
+  "model": "core.student",
+  "pk": 6,
+  "fields": {
+    "name": "TODO Student Two",
+    "level": "phd",
+    "topic": "TODO: research topic",
+    "start_year": 2024,
+    "end_year": null,
+    "photo": "",
+    "status": "current",
+    "link": "",
+    "order": 2
+  }
+},
+{
+  "model": "core.student",
+  "pk": 7,
+  "fields": {
+    "name": "TODO Student Three",
+    "level": "msc",
+    "topic": "TODO: research topic",
+    "start_year": 2025,
+    "end_year": null,
+    "photo": "",
+    "status": "current",
+    "link": "",
+    "order": 3
+  }
+},
+{
+  "model": "core.student",
+  "pk": 8,
+  "fields": {
+    "name": "TODO Former Student",
+    "level": "msc",
+    "topic": "TODO: thesis topic",
+    "start_year": 2021,
+    "end_year": 2023,
+    "photo": "",
+    "status": "alumni",
+    "link": "",
+    "order": 4
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 11,
+  "fields": {
+    "title": "Characterizing the influence of stress-induced microcracks on the laboratory strength and fracture development in brittle rocks using a finite-discrete element method-micro discrete fracture network FDEM-μDFN approach",
+    "authors": "P Hamdi, D Stead, D Elmo",
+    "venue": "Journal of Rock Mechanics and Geotechnical Engineering 7 (6), 609-625",
+    "year": 2015,
+    "citations": 125,
+    "url": "",
+    "featured": true,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 12,
+  "fields": {
+    "title": "Damage characterization during laboratory strength testing: a 3D-finite-discrete element approach",
+    "authors": "P Hamdi, D Stead, D Elmo",
+    "venue": "Computers and Geotechnics 60, 33-46",
+    "year": 2014,
+    "citations": 81,
+    "url": "",
+    "featured": true,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 13,
+  "fields": {
+    "title": "Use of an integrated finite/discrete element method-discrete fracture network approach to characterize surface subsidence associated with sub-level caving",
+    "authors": "P Hamdi, D Stead, D Elmo, J Töyrä",
+    "venue": "International Journal of Rock Mechanics and Mining Sciences 103, 55-67",
+    "year": 2018,
+    "citations": 76,
+    "url": "",
+    "featured": true,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 14,
+  "fields": {
+    "title": "A multifunctional rock testing system for rock failure analysis under different stress states: Development and application",
+    "authors": "S Li, J Hu, F Amann, L Li, H Liu, S Shi, P Hamdi",
+    "venue": "Journal of Rock Mechanics and Geotechnical Engineering 14 (5), 1531-1544",
+    "year": 2022,
+    "citations": 33,
+    "url": "",
+    "featured": false,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 15,
+  "fields": {
+    "title": "Investigating High-Strength Expanded Polystyrene (HS-EPS) as yielding support elements for tunnelling in squeezing ground conditions",
+    "authors": "M Entfellner, P Hamdi, X Wang, H Wannenmacher, F Amann",
+    "venue": "Tunnelling and Underground Space Technology 140, 105261",
+    "year": 2023,
+    "citations": 27,
+    "url": "",
+    "featured": false,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 16,
+  "fields": {
+    "title": "Unloading induced absolute negative pore pressures in a low permeable clay shale",
+    "authors": "K Khaledi, P Hamdi, L Winhausen, M Jalali, D Jaeggi, F Amann",
+    "venue": "Engineering Geology 295, 106451",
+    "year": 2021,
+    "citations": 25,
+    "url": "",
+    "featured": false,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 17,
+  "fields": {
+    "title": "A comparative study on methods for determining the hydraulic properties of a clay shale",
+    "authors": "L Winhausen, A Amann-Hildenbrand, R Fink, M Jalali, K Khaledi, ...",
+    "venue": "Geophysical Journal International 224 (3), 1523-1539",
+    "year": 2021,
+    "citations": 23,
+    "url": "",
+    "featured": false,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 18,
+  "fields": {
+    "title": "Step path rock bridge percentage for analysis of slope stability",
+    "authors": "WS Dershowitz, A Finnila, S Rogers, P Hamdi, KM Moffitt",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, ARMA-2017-1045",
+    "year": 2017,
+    "citations": 23,
+    "url": "",
+    "featured": false,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 19,
+  "fields": {
+    "title": "Transversely isotropic slates subject to the compressive differential cyclic loading, Part I: experimental investigations",
+    "authors": "ZY Song, T Zhang, WG Dang, P Hamdi, F Song, ZH Yu, Z Yang",
+    "venue": "Rock Mechanics and Rock Engineering 57 (8), 5609-5635",
+    "year": 2024,
+    "citations": 15,
+    "url": "",
+    "featured": false,
+    "scholar_id": ""
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 20,
+  "fields": {
+    "title": "Back-analysis of the paraglacial slope failure at Grewingk Glacier and Lake, Alaska",
+    "authors": "E Lemaire, A Dufresne, P Hamdi, B Higman, GJ Wolken, F Amann",
+    "venue": "Landslides 21 (4), 775-789",
+    "year": 2024,
+    "citations": 15,
+    "url": "",
+    "featured": true,
+    "scholar_id": ""
+  }
+}
+]

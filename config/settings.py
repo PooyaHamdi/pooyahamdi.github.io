@@ -1,4 +1,5 @@
 import os
+import sys
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,3 +86,9 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 SCHOLAR_USER_ID = os.environ.get("SCHOLAR_USER_ID", "QqegjnAAAAAJ")
+
+# Site content lives in content/site.json (committed to git). It is rewritten
+# automatically whenever content is saved in the admin. Off during tests so
+# test data never overwrites the real file.
+CONTENT_FILE = BASE_DIR / "content" / "site.json"
+CONTENT_AUTOEXPORT = os.environ.get("CONTENT_AUTOEXPORT", "1") == "1" and sys.argv[1:2] != ["test"]

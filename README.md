@@ -8,7 +8,7 @@ Django site with four pages (About, Research, Publications, Team). All content i
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python manage.py migrate
-.venv/bin/python manage.py seed_site          # starting content (once)
+.venv/bin/python manage.py loaddata content/site.json   # load the site content
 .venv/bin/python manage.py createsuperuser    # your admin login
 .venv/bin/python manage.py runserver
 ```
@@ -38,15 +38,37 @@ This reads the public Scholar profile and updates the citation numbers, the per-
 
 Scholar has no official API and sometimes refuses automated requests. When that happens, the command reports an error and the existing numbers stay as they are. You can always type the numbers in by hand under **Citation statistics**. To run it automatically, schedule the command weekly on the host.
 
-## Deploying
+## Publishing to GitHub Pages
 
-Set these environment variables:
+The admin only runs on your computer. The public site is plain HTML, built by a GitHub Action and served on GitHub Pages.
 
-- `DJANGO_DEBUG=0`
-- `DJANGO_SECRET_KEY=<random>`
-- `DJANGO_ALLOWED_HOSTS=yourdomain.com`
-- `DJANGO_CSRF_TRUSTED_ORIGINS=https://yourdomain.com`
+1. Run the site locally and edit content in `/admin`.
+2. Every save rewrites `content/site.json`. Uploaded photos and the CV go into `media/`.
+3. Commit and push both:
 
-Then run `collectstatic` and serve the site with `gunicorn config.wsgi`.
+   ```bash
+   git add content media
+   git commit -m "Update site content"
+   git push
+   ```
 
-The host must also serve uploaded photos and the CV from `media/`. For example, use a static-files mapping on PythonAnywhere or a persistent disk on Render.
+4. The **Build and deploy site** action loads `content/site.json` into a fresh database, runs the tests, renders each page to HTML with `manage.py build_site`, and publishes it.
+
+`db.sqlite3` is not committed, so your admin login never ends up on GitHub. On a new computer, run `loaddata content/site.json` to get the current content.
+
+To preview the static build locally:
+
+```bash
+.venv/bin/python manage.py build_site --output _site
+python3 -m http.server -d _site 8001
+```
+
+### One-time GitHub setup
+
+1. Create the repository on GitHub and push.
+2. Under **Settings → Pages**, set **Source** to **GitHub Actions**.
+3. To deploy from a branch other than `main`, add that branch under **Settings → Environments → github-pages → Deployment branches**.
+
+The action works out the URL prefix itself. A project page is served at `/<repo>/`. A custom domain or a `<user>.github.io` repository is served at `/`.
+
+Replacing a photo in the admin does not delete the old file from `media/`. Delete unused files by hand before committing if you want to keep the repository small.
