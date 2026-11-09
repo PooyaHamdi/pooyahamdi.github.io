@@ -1,6 +1,6 @@
 # Dr. Pooya Hamdi: personal website
 
-Django site with four pages (About, Research, Publications, Team). All content is edited in the built-in admin at `/admin`.
+Django site with three pages (About, Research, Publications). A Team page exists but is hidden for now; see `core/urls.py`. All content is edited in the built-in admin at `/admin`.
 
 ## Run locally
 
@@ -22,7 +22,7 @@ Open http://127.0.0.1:8000. The editor is at http://127.0.0.1:8000/admin.
 | Profile | Name, title, bio, photo, and the Google Scholar / LinkedIn / email / CV links |
 | Education | The education ladder on the About page. Lower `order` numbers appear first. |
 | Projects | Research page cards, grouped as Ongoing or Completed |
-| Students | Team page: current students get cards, alumni get a list |
+| Students | Team page (hidden for now): current students get cards, alumni get a list |
 | Publications | Publications page. Tick **featured** to list a paper under "Selected publications". |
 | Citation statistics | The numbers and chart on the About page, plus a **Refresh citations from Google Scholar** button |
 

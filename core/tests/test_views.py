@@ -1,3 +1,5 @@
+from unittest import skip
+
 from django.contrib.auth.models import User
 from django.core.management import call_command
 from django.test import TestCase
@@ -36,6 +38,7 @@ class PageTests(TestCase):
         self.assertContains(r, "Damage characterization")
         self.assertContains(r, "Cited by 125")
 
+    @skip("Team page hidden for now")
     def test_team(self):
         r = self.client.get(reverse("team"))
         self.assertContains(r, "Current students")

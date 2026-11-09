@@ -6,5 +6,6 @@ urlpatterns = [
     path("", views.home, name="home"),
     path("research/", views.research, name="research"),
     path("publications/", views.publications, name="publications"),
-    path("team/", views.team, name="team"),
+    # Team page hidden for now. Re-enable with the nav link in base.html and PAGES in build_site.py.
+    # path("team/", views.team, name="team"),
 ]

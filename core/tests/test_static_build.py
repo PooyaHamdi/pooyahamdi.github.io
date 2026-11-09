@@ -17,7 +17,7 @@ class StaticBuildTests(TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             call_command("build_site", output=tmp, base_path="pooya-hamdi", stdout=open("/dev/null", "w"))
             out = Path(tmp)
-            for page in ["index.html", "research/index.html", "publications/index.html", "team/index.html"]:
+            for page in ["index.html", "research/index.html", "publications/index.html"]:
                 self.assertTrue((out / page).exists(), page)
             home = (out / "index.html").read_text()
             self.assertIn('href="/pooya-hamdi/research/"', home)

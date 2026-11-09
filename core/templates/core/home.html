@@ -84,13 +84,6 @@
     <div class="axis" aria-hidden="true">
       {% for b in bars %}<span class="{% if not b.label_year %}hidden{% elif not b.label_mobile %}minor{% endif %}" style="left:{{ b.left }}%">{{ b.year }}</span>{% endfor %}
     </div>
-    <details class="chart-table">
-      <summary>Show as table</summary>
-      <table>
-        <thead><tr><th scope="col">Year</th><th scope="col">Citations</th></tr></thead>
-        <tbody>{% for b in bars %}<tr><td>{{ b.year }}</td><td>{{ b.count }}</td></tr>{% endfor %}</tbody>
-      </table>
-    </details>
   </figure>
   {% endif %}
   {% if stats.last_updated %}<p class="note">Updated {{ stats.last_updated|date:"j F Y" }}.</p>{% endif %}

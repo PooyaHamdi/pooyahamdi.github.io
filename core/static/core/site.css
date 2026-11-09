@@ -172,10 +172,6 @@ main > section { margin-top: 5rem; }
   white-space: nowrap;
   pointer-events: none;
 }
-.chart-table { margin-top: 1rem; font-size: 0.85rem; color: var(--ink-muted); }
-.chart-table summary { cursor: pointer; }
-.chart-table table { border-collapse: collapse; margin-top: 0.75rem; }
-.chart-table th, .chart-table td { text-align: right; padding: 0.2rem 1rem 0.2rem 0; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
 .note { color: var(--ink-muted); font-size: 0.85rem; margin-top: 1rem; }
 
 /* Education ladder */

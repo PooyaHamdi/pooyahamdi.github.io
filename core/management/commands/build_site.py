@@ -7,7 +7,7 @@ from django.test import Client
 from django.test.utils import override_settings
 from django.urls import get_script_prefix, reverse, set_script_prefix
 
-PAGES = ["home", "research", "publications", "team"]
+PAGES = ["home", "research", "publications"]  # "team" hidden for now
 
 
 class Command(BaseCommand):
