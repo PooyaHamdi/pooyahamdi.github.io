@@ -3,7 +3,7 @@ from django.shortcuts import redirect
 from django.urls import path, reverse
 
 from . import scholar
-from .models import Education, Experience, Profile, Project, Publication, ScholarStats, Student
+from .models import Education, Experience, Profile, Project, ProjectImage, Publication, ScholarStats, Student
 
 
 class SingletonAdmin(admin.ModelAdmin):
@@ -77,10 +77,26 @@ class ExperienceAdmin(OrderedAdmin):
     list_display = ["role", "organization", "start_year", "end_year", "order"]
 
 
+class ProjectImageInline(admin.StackedInline):
+    model = ProjectImage
+    extra = 0
+    fields = ["image", "caption", "credit", "order"]
+
+
 @admin.register(Project)
 class ProjectAdmin(OrderedAdmin):
     list_display = ["title", "status", "start_year", "end_year", "order"]
     list_filter = ["status"]
+    prepopulated_fields = {"slug": ["title"]}
+    inlines = [ProjectImageInline]
+    view_on_site = True
+    fieldsets = [
+        (None, {"fields": ["title", "slug", "status", "order"]}),
+        ("Research page card", {"fields": ["summary", "image"]}),
+        ("Details", {"fields": ["role", "funder", "partners", ("start_year", "end_year")]}),
+        ("Project page", {"fields": ["body"], "description": "Photos for the project page are added below."}),
+        ("Reference", {"fields": ["link"], "classes": ["collapse"]}),
+    ]
 
 
 @admin.register(Student)
@@ -91,7 +107,6 @@ class StudentAdmin(OrderedAdmin):
 
 @admin.register(Publication)
 class PublicationAdmin(admin.ModelAdmin):
-    list_display = ["title", "year", "citations", "featured"]
-    list_editable = ["featured"]
-    list_filter = ["featured", "year"]
+    list_display = ["title", "year", "citations"]
+    list_filter = ["year"]
     search_fields = ["title", "authors", "venue"]

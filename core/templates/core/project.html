@@ -1,0 +1,36 @@
+{% extends "core/base.html" %}
+{% load content %}
+{% block title %}{{ p.title }} · {{ profile.name }}{% endblock %}
+{% block content %}
+<p class="back"><a href="{% url 'research' %}">← Research</a></p>
+<article class="project-page">
+  <header class="page-head">
+    <p class="meta">{{ p.get_status_display }} project{% if p.start_year %} · {{ p.start_year }}–{{ p.end_year|default:"present" }}{% endif %}</p>
+    <h1>{{ p.title }}</h1>
+    {% if p.summary %}<p class="lede">{{ p.summary }}</p>{% endif %}
+  </header>
+
+  {% if p.image %}<img class="project-hero" src="{{ p.image.url }}" alt="">{% endif %}
+
+  {% if p.role or p.funder or p.partners %}
+  <dl class="facts">
+    {% if p.role %}<div><dt>Role</dt><dd>{{ p.role }}</dd></div>{% endif %}
+    {% if p.funder %}<div><dt>Funding</dt><dd>{{ p.funder }}</dd></div>{% endif %}
+    {% if p.partners %}<div><dt>Partners</dt><dd>{{ p.partners }}</dd></div>{% endif %}
+  </dl>
+  {% endif %}
+
+  {% if p.body %}<div class="prose">{{ p.body|markdown }}</div>{% endif %}
+
+  {% with photos=p.images.all %}{% if photos %}
+  <section class="gallery" aria-label="Photos">
+    {% for photo in photos %}
+    <figure>
+      <img src="{{ photo.image.url }}" alt="{{ photo.caption }}" loading="lazy">
+      {% if photo.caption or photo.credit %}<figcaption>{{ photo.caption }}{% if photo.credit %} <span class="credit">{{ photo.credit }}</span>{% endif %}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+  </section>
+  {% endif %}{% endwith %}
+</article>
+{% endblock %}

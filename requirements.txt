@@ -4,3 +4,4 @@ requests>=2.32
 beautifulsoup4>=4.12
 whitenoise>=6.7
 gunicorn>=23
+markdown>=3.7

@@ -7,6 +7,8 @@ from django.test import Client
 from django.test.utils import override_settings
 from django.urls import get_script_prefix, reverse, set_script_prefix
 
+from core.models import Project
+
 PAGES = ["home", "research", "publications"]  # "team" hidden for now
 
 
@@ -25,7 +27,8 @@ class Command(BaseCommand):
         out = Path(output).resolve()
         base_path = "/" + base_path.strip("/") + "/" if base_path.strip("/") else "/"
 
-        paths = [reverse(name) for name in PAGES]  # before any request sets a script prefix
+        # Before any request sets a script prefix.
+        paths = [reverse(name) for name in PAGES] + [p.get_absolute_url() for p in Project.objects.all()]
 
         if out.exists():
             shutil.rmtree(out)

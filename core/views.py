@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 
 from .models import Education, Experience, Project, Publication, ScholarStats, Student
 
@@ -66,11 +66,16 @@ def research(request):
     })
 
 
+def project(request, slug):
+    return render(request, "core/project.html", {
+        "p": get_object_or_404(Project, slug=slug),
+        "nav": "research",
+    })
+
+
 def publications(request):
-    pubs = Publication.objects.all()
     return render(request, "core/publications.html", {
-        "featured": pubs.filter(featured=True).order_by("-citations"),
-        "publications": pubs,
+        "publications": Publication.objects.all(),
         "stats": ScholarStats.load(),
         "nav": "publications",
     })

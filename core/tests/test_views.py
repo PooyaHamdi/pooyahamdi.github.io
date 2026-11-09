@@ -23,7 +23,7 @@ class PageTests(TestCase):
 
     def test_home_shows_rwth_profile_and_career(self):
         r = self.client.get(reverse("home"))
-        self.assertContains(r, ">RWTH profile</a>")
+        self.assertContains(r, 'aria-label="RWTH profile"')
         self.assertContains(r, "Career")
         self.assertContains(r, "Golder Associates Ltd.")
         self.assertContains(r, "Simon Fraser University")
@@ -71,3 +71,40 @@ class AdminTests(TestCase):
         self.assertRedirects(r, reverse("admin:core_profile_change", args=[1]))
         r = self.client.get(reverse("admin:core_scholarstats_changelist"), follow=True)
         self.assertContains(r, "Refresh citations from Google Scholar")
+
+
+class ProjectPageTests(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        from core.models import Project
+
+        cls.with_page = Project.objects.create(
+            title="Tunnel Study", summary="Short card text.", partners="ETH Zurich",
+            body="Intro paragraph.\n\n## Project team\n\n- [Someone](https://example.org/someone)", link="https://www.lih.rwth-aachen.de/x",
+        )
+        cls.card_only = Project.objects.create(title="Card Only")
+
+    def test_slug_filled_from_title_and_unique(self):
+        from core.models import Project
+
+        self.assertEqual(self.with_page.slug, "tunnel-study")
+        self.assertEqual(Project.objects.create(title="Tunnel Study").slug, "tunnel-study-2")
+
+    def test_research_cards_link_to_own_pages_not_rwth(self):
+        r = self.client.get(reverse("research"))
+        self.assertContains(r, 'href="/research/tunnel-study/"')
+        self.assertNotContains(r, "rwth-aachen.de/x")
+        self.assertNotContains(r, 'href="/research/card-only/"')
+
+    def test_project_page_renders_formatted_body(self):
+        r = self.client.get(reverse("project", args=["tunnel-study"]))
+        self.assertContains(r, "<h1>Tunnel Study</h1>", html=True)
+        self.assertContains(r, "<h2>Project team</h2>", html=True)
+        self.assertContains(
+            r, '<li><a href="https://example.org/someone" target="_blank" rel="noopener">Someone</a></li>', html=True
+        )
+        self.assertContains(r, "ETH Zurich")
+        self.assertNotContains(r, "rwth-aachen.de/x")
+
+    def test_unknown_project_404(self):
+        self.assertEqual(self.client.get("/research/nope/").status_code, 404)

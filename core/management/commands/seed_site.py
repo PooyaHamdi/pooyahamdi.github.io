@@ -158,9 +158,9 @@ class Command(BaseCommand):
         stats.last_updated = timezone.now()
         stats.save()
 
-        for title, authors, venue, year, cites, featured in PUBLICATIONS:
+        for title, authors, venue, year, cites, _ in PUBLICATIONS:
             Publication.objects.create(title=title, authors=authors, venue=venue, year=year,
-                                       citations=cites, featured=featured)
+                                       citations=cites)
         for row in EDUCATION:
             Education.objects.create(**row)
         for row in EXPERIENCE:

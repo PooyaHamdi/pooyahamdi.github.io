@@ -13,7 +13,7 @@
     {% for s in current %}
     <article class="person">
       {% if s.photo %}<img src="{{ s.photo.url }}" alt="" loading="lazy">{% else %}<div class="avatar" aria-hidden="true">{{ s.initials }}</div>{% endif %}
-      <h3>{% if s.link %}<a href="{{ s.link }}" rel="noopener">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h3>
+      <h3>{% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h3>
       <p class="meta">{{ s.get_level_display }}{% if s.start_year %} · since {{ s.start_year }}{% endif %}</p>
       {% if s.topic %}<p class="topic">{{ s.topic }}</p>{% endif %}
     </article>

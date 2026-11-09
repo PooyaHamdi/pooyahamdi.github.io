@@ -45,7 +45,7 @@ class SyncTests(TestCase):
     def test_sync_updates_and_preserves_manual_fields(self):
         Publication.objects.create(
             title="Damage characterization during laboratory strength testing: a 3D-finite-discrete element approach",
-            citations=10, featured=True,
+            citations=10, venue="Edited by hand",
         )
         session = mock.Mock(headers={})
         session.get.return_value = self._response()
@@ -54,7 +54,7 @@ class SyncTests(TestCase):
         self.assertEqual(stats.citations, 1575)
         pub = Publication.objects.get(title__startswith="Damage")
         self.assertEqual(pub.citations, 81)
-        self.assertTrue(pub.featured)
+        self.assertEqual(pub.venue, "Edited by hand")
         self.assertNotIn("Mozilla", session.headers["User-Agent"])
 
     def test_failed_fetch_keeps_existing_data(self):

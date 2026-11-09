@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ profile.name }}{% endblock %}</title>
   <meta name="description" content="{{ profile.name }}, {{ profile.title }}, {{ profile.affiliation }}">
-  <link rel="stylesheet" href="{% static 'core/site.css' %}">
+  <link rel="stylesheet" href="{% static 'core/site.css' %}?v={{ css_version }}">
 </head>
 <body>
   <header class="site-header">

@@ -19,9 +19,13 @@ class StaticBuildTests(TestCase):
             out = Path(tmp)
             for page in ["index.html", "research/index.html", "publications/index.html"]:
                 self.assertTrue((out / page).exists(), page)
+            from core.models import Project
+
+            for project in Project.objects.all():
+                self.assertTrue((out / "research" / project.slug / "index.html").exists(), project.slug)
             home = (out / "index.html").read_text()
             self.assertIn('href="/pooya-hamdi/research/"', home)
-            self.assertIn('href="/pooya-hamdi/static/core/site.css"', home)
+            self.assertIn('href="/pooya-hamdi/static/core/site.css?v=', home)
             self.assertNotIn("/admin", home)
             self.assertTrue((out / "static/core/site.css").exists())
 

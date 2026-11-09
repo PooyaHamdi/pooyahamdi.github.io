@@ -113,14 +113,28 @@ class Project(models.Model):
     STATUS_CHOICES = [(ONGOING, "Ongoing"), (COMPLETED, "Completed")]
 
     title = models.CharField(max_length=300)
-    summary = models.TextField(blank=True)
+    slug = models.SlugField(
+        max_length=80, unique=True,
+        help_text="The project page's web address: /research/<slug>/. Filled in from the title.",
+    )
+    summary = models.TextField(blank=True, help_text="Short text shown on the Research page card.")
     image = models.ImageField(upload_to="projects/", blank=True)
     role = models.CharField(max_length=200, blank=True, help_text="e.g. Principal Investigator")
     funder = models.CharField(max_length=200, blank=True)
+    partners = models.CharField("Partners / collaborators", max_length=500, blank=True)
     start_year = models.PositiveIntegerField(null=True, blank=True)
     end_year = models.PositiveIntegerField(null=True, blank=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=ONGOING)
-    link = models.URLField(blank=True)
+    body = models.TextField(
+        "Full description", blank=True,
+        help_text="Shown on the project's own page. Separate paragraphs with a blank line. "
+                  "Formatting: <code>## Heading</code>, <code>- list item</code>, <code>**bold**</code>, "
+                  "<code>[link text](https://...)</code>.",
+    )
+    link = models.URLField(
+        "Original source page", max_length=500, blank=True,
+        help_text="For your reference only (e.g. the old RWTH page). Not shown on the site.",
+    )
     order = models.PositiveIntegerField(default=0, help_text="Lower numbers appear first.")
 
     class Meta:
@@ -128,6 +142,49 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = unique_slug(self, self.title)
+        super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        from django.urls import reverse
+
+        return reverse("project", args=[self.slug])
+
+    @property
+    def has_page(self):
+        """Only projects with something beyond the card get a clickable page."""
+        return bool(self.body.strip()) or self.images.exists()
+
+
+def unique_slug(instance, text, max_length=80):
+    from django.utils.text import slugify
+
+    base = slugify(text)[:max_length].rstrip("-") or "project"
+    slug, n = base, 2
+    qs = type(instance).objects.exclude(pk=instance.pk)
+    while qs.filter(slug=slug).exists():
+        suffix = f"-{n}"
+        slug = base[: max_length - len(suffix)] + suffix
+        n += 1
+    return slug
+
+
+class ProjectImage(models.Model):
+    project = models.ForeignKey(Project, related_name="images", on_delete=models.CASCADE)
+    image = models.ImageField(upload_to="projects/")
+    caption = models.CharField(max_length=500, blank=True)
+    credit = models.CharField(max_length=200, blank=True, help_text="e.g. © LIH")
+    order = models.PositiveIntegerField(default=0, help_text="Lower numbers appear first.")
+
+    class Meta:
+        ordering = ["order", "pk"]
+        verbose_name = "Photo"
+
+    def __str__(self):
+        return self.caption or self.image.name
 
 
 class Student(models.Model):
@@ -164,7 +221,6 @@ class Publication(models.Model):
     year = models.PositiveIntegerField(null=True, blank=True)
     citations = models.PositiveIntegerField(default=0)
     url = models.URLField(max_length=500, blank=True)
-    featured = models.BooleanField(default=False, help_text="Show on the home page.")
     scholar_id = models.CharField(max_length=100, blank=True, help_text="Set automatically by the Scholar sync.")
 
     class Meta:

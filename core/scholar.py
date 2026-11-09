@@ -168,7 +168,7 @@ def save_profile(parsed):
             Publication.objects.create(**pub.__dict__)
             created += 1
         else:
-            # Only refresh what Scholar owns; keep manual edits like `featured`.
+            # Only refresh what Scholar owns; keep manual edits to title, authors and venue.
             existing.citations = pub.citations
             existing.scholar_id = pub.scholar_id or existing.scholar_id
             existing.year = existing.year or pub.year
@@ -179,5 +179,14 @@ def save_profile(parsed):
 
 
 def sync(user_id=None):
-    """Fetch and store. Raises ScholarError and leaves the DB untouched on failure."""
-    return save_profile(fetch_profile(user_id))
+    """Fetch and store. Raises ScholarError and leaves the DB untouched on failure.
+
+    Afterwards, publications still linking to Scholar are pointed at their DOI
+    (see core/doi.py). That step never fails the sync.
+    """
+    from . import doi
+    from .models import Publication
+
+    result = save_profile(fetch_profile(user_id))
+    doi.link_publications(Publication.objects.all())
+    return result

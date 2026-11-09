@@ -21,9 +21,9 @@ Open http://127.0.0.1:8000. The editor is at http://127.0.0.1:8000/admin.
 |---|---|
 | Profile | Name, title, bio, photo, and the Google Scholar / LinkedIn / email / CV links |
 | Education | The education ladder on the About page. Lower `order` numbers appear first. |
-| Projects | Research page cards, grouped as Ongoing or Completed |
+| Projects | Research page cards, grouped as Ongoing or Completed. Each project with a **Full description** or photos gets its own page at `/research/<slug>/`, and its card links there. Add photos with captions under the project. |
 | Students | Team page (hidden for now): current students get cards, alumni get a list |
-| Publications | Publications page. Tick **featured** to list a paper under "Selected publications". |
+| Publications | Publications page, grouped by year. Filled from Google Scholar (see below). |
 | Citation statistics | The numbers and chart on the About page, plus a **Refresh citations from Google Scholar** button |
 
 Entries containing `TODO` are placeholders to replace.
@@ -36,7 +36,9 @@ Uploaded photos are scaled down automatically to at most 1600px on the long side
 .venv/bin/python manage.py update_scholar
 ```
 
-This reads the public Scholar profile and updates the citation numbers, the per-year chart, and each paper's citation count. New papers are added automatically. Your manual edits (such as `featured`) are kept.
+This reads the public Scholar profile and updates the citation numbers, the per-year chart, and each paper's citation count. New papers are added automatically. Your manual edits to titles, authors and venues are kept.
+
+Paper titles link to the article itself: after each refresh, papers still linking to Google Scholar are looked up in [Crossref](https://www.crossref.org/) and linked to their DOI (`https://doi.org/...`). Papers Crossref doesn't know keep their Scholar link. A link you change by hand in the admin is never replaced.
 
 Scholar has no official API and sometimes refuses automated requests. When that happens, the command reports an error and the existing numbers stay as they are. You can always type the numbers in by hand under **Citation statistics**. To run it automatically, schedule the command weekly on the host.
 

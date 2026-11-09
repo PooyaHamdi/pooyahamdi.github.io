@@ -23,8 +23,8 @@
   "model": "core.scholarstats",
   "pk": 1,
   "fields": {
-    "citations": 575,
-    "citations_recent": 418,
+    "citations": 583,
+    "citations_recent": 426,
     "h_index": 12,
     "h_index_recent": 11,
     "i10_index": 14,
@@ -43,10 +43,10 @@
       "2022": 49,
       "2023": 64,
       "2024": 69,
-      "2025": 82,
-      "2026": 118
+      "2025": 83,
+      "2026": 125
     },
-    "last_updated": "2026-11-02T14:31:52.484Z"
+    "last_updated": "2026-11-09T17:39:31.391Z"
   }
 },
 {
@@ -147,13 +147,16 @@
   "pk": 4,
   "fields": {
     "title": "Progressive Excavation Disturbance Zone Evolution during and Post Mine-by Tunnelling (PRECODE)",
+    "slug": "precode",
     "summary": "A 100 m experimental tunnel branching off the Bedretto tunnel in Ticino, Switzerland, instrumented to monitor strain, pore pressure and micro-seismicity. The project studies how the excavation damage zone forms and evolves, long-term fracture propagation, permeability changes and the impact on fault zones. Partners: York University, Dalhousie University, ETH Zurich and BGE Tech.",
     "image": "",
     "role": "Principal Investigator (with Florian Amann)",
     "funder": "Bundesgesellschaft für Endlagerung (BGE)",
+    "partners": "York University (Canada), Dalhousie University (Canada), ETH Zurich (Switzerland), BGE Tech (Germany)",
     "start_year": 2021,
     "end_year": 2024,
     "status": "ongoing",
+    "body": "Fracture initiation and propagation in the surrounding of tunnel excavations in highly stressed rocks may initiate during the tunnelling process and develop over time. This progressive brittle fracturing may lead to an interconnected fracture network, typically associated with the radiation of micro-seismic signals. Within the excavation damage zone (EDZ), the permeability is often enhanced by two to three orders of magnitude and, in the framework of nuclear waste disposal, may provide preferential pathways for radionuclide migration.\n\nWithin the PRECODE experiment, we investigate the development and time-dependent changes around a tunnel at the Bedretto Underground Laboratory for Geosciences and Geoenergies (BULGG) in Ticino, Switzerland. The infrastructure and experimental design will be integrated with ongoing projects at LIH, such as the FEAR and SPINE experiments. Within PRECODE we will establish a new, 100 m long experimental tunnel as a branch from the existing Bedretto tunnel, which will be densely instrumented with strain, pore pressure and micro-seismic sensors prior to the excavation.\n\nThe main objectives of the PRECODE experiment are to understand:\n\n1. Short-term rock mass behaviour and EDZ formation during tunnelling\n2. Long-term fracture propagation within the EDZ associated with environmental conditions\n3. Permeability changes with time around an open excavation\n4. The impact of tunnelling on dislocations across nearby fault zones\n\n## Project team\n\n- Pooya Hamdi\n- [Florian Amann](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Institutsleitung/~qaoh/Florian-Amann/lidx/1/)\n- Peter Achtziger (Fraunhofer IEG)\n- [Michal Kruszewski](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~bbnrvt/Michal-Kruszewski/lidx/1/)\n- [Jonas Dickmann](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~bddszx/Jonas-Dickmann/lidx/1/)\n",
     "link": "https://www.lih.rwth-aachen.de/cms/LIH/Forschung/Ingenieurgeologie/Aktuelle-Projekte/~pxmun/Progressive-Entwicklung-der-Auflockerung/1/?lidx=1",
     "order": 1
   }
@@ -163,13 +166,16 @@
   "pk": 5,
   "fields": {
     "title": "Understanding Failure Mechanism of Non-Persistent Discontinuities Using 3D-Printed Synthetic Rock Mass",
+    "slug": "3d-printed-rock-mass",
     "summary": "Laboratory tests on 3D-printed synthetic rock mass samples with known joint configurations, used to calibrate numerical models and develop a constitutive model for rock mass strength. In collaboration with GeoPrint at the University of Alberta, Canada.",
     "image": "",
     "role": "Principal Investigator (with Florian Amann)",
     "funder": "German Research Foundation (DFG)",
+    "partners": "GeoPrint at the University of Alberta, Canada",
     "start_year": 2021,
     "end_year": 2024,
     "status": "ongoing",
+    "body": "DFG project number 463538034.\n\nRock mass consists of a complex interplay of two components: the intact rock and spatially distributed rock joints of various orientation and persistence. It is of paramount importance to understand rock mass behaviour in geo-engineering, as an adequate design of structures such as tunnels and slopes relies on the rock mass strength and deformation characteristics. There is currently no direct way of estimating the mechanical characteristics of rock mass, and it is common in practice to estimate rock mass strength indirectly using empirical classification.\n\nThe aim of this project is to understand the mechanical characteristics and failure mechanism of rock mass through additive manufacturing (3D printing). Using 3D printing, we build synthetic rock mass samples with known configurations (the strength and the spatial distribution of rock joints) and test them systematically in the laboratory. The key advantage of this method is that it allows repeatable laboratory testing on samples with similar physical conditions, reducing uncertainty and increasing the reliability of results.\n\nThe results of the laboratory tests on the 3D-printed samples are then used to calibrate and verify numerical results, with the goal of developing a new constitutive model to estimate rock mass strength.\n\n## Project team\n\n- [Florian Amann](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Institutsleitung/~qaoh/Florian-Amann/lidx/1/)\n- Pooya Hamdi\n- [Dima Shamsedine](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~rqeqv/Dima-Shamsedine/lidx/1/)\n",
     "link": "https://www.lih.rwth-aachen.de/cms/LIH/Forschung/Ingenieurgeologie/Aktuelle-Projekte/~pekiz/Verstaendnis-von-Versagensmechanismen-vo/?lidx=1",
     "order": 2
   }
@@ -179,13 +185,16 @@
   "pk": 6,
   "fields": {
     "title": "Landslide Dam Properties and Stability (LADY)",
+    "slug": "lady",
     "summary": "Why do some landslide dams remain stable for thousands of years while others fail within months? LADY combines dam mapping, lake water-balance analysis and numerical stability simulations to test a new hypothesis.",
     "image": "",
     "role": "Principal Investigator (with Anja Dufresne and Florian Amann)",
     "funder": "German Research Foundation (DFG)",
+    "partners": "",
     "start_year": null,
     "end_year": null,
     "status": "ongoing",
+    "body": "Research on natural dams at LIH has been running since 2016.\n\nLarge landslides occur both in mountainous regions and where rivers incise the landscape (for example, the vast plains of the Peace River region in British Columbia, Canada). They can completely block a valley, dam the river, and form lakes whose stability varies from minutes to millennia.\n\nResearch at LIH includes regional studies to examine the longevity of landslide dams, test empirical stability criteria in different materials, landslide types and environments, and illuminate their long-term landscape impacts (Dufresne et al. 2018; Miller et al. 2018).\n\nBased on two review articles (Fan et al. 2020 and 2021), a comprehensive database of landslide dams from around the world is being developed in preparation for a Springer book (Dufresne, Fan, Wolter, editors: *Landslide Dams Around the World*). In the book, the database will be expanded with additional data entries and analyses, and treated in geographic chapters. An international team of co-authors and interested parties met at EGU 2023 in a session on the topic.\n\nIn our new DFG-funded project, LADY (Landslide Dam Properties and Stability), our goal is to understand why some landslide dams maintain stable lakes for up to thousands of years while others fail within minutes to a few months of their formation. Much is still unknown about the exact failure processes, and understanding of dam performance varies widely between disciplines. This project aims to fill this gap by bringing together expertise from landslide sedimentology, dam construction, hydrology and numerical analysis. Detailed dam mapping will be combined with engineering approaches, lake water-balance assessment, numerical simulation of dam stability, and testing of a new hypothesis. With this multidisciplinary approach, we expect to deepen our knowledge of the processes involved in the failure of natural dams and advance our understanding of their stability.\n\n## Project team\n\n- [Anja Dufresne](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~qfrk/Anja-Dufresne/lidx/1/)\n- [Florian Amann](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Institutsleitung/~qaoh/Florian-Amann/lidx/1/)\n- Pooya Hamdi\n- [Thomas Wolfert](https://www.lih.rwth-aachen.de/cms/lih/der-lehrstuhl/team/ingenieurgeologie/~beqyxv/thomas-wolfert/?lidx=1)\n\n## Publications\n\n- Dufresne A, Fan X, Wolter A (editors). Landslide Dams Around the World. Springer-Verlag, in preparation.\n- Fan X, Dufresne A, Whiteley J, Yunus AP, Subramanian SS, Okeke A, Pánek T, Hermanns R, Ming P, Strom A, Havenith HB, Dunning SA, Wang G, Tacconi Stefanelli C (in review). Recent technological and methodological advances for the investigations of landslide dams. Earth-Science Reviews.\n- Fan X, Dufresne A, Subramanian SS, Strom A, Hermanns R, Tacconi Stefanelli C, Hewitt K, Pulpadan YA, Dunning SA, Capra L, Geertsema M, Miller B, Casagli N, Jansen JD, Xu Q (2020). The formation and impact of landslide dams – state of the art. Earth-Science Reviews 203: 103116.\n- Dufresne A, Ostermann MA, Preusser F (2018). River-damming, late-Quaternary rockslides in the Ötz Valley region (Tyrol, Austria). Geomorphology 310: 153–167.\n- Miller BGN, Dufresne A, Geertsema M, Atkinson N, Evensen H, Cruden DM (2018). Longevity of dams from landslides with sub-channel rupture surfaces, Peace River region, Canada. Geoenvironmental Disasters 5(1): [doi.org/10.1186/s40677-017-0090-0](https://doi.org/10.1186/s40677-017-0090-0)\n",
     "link": "https://www.lih.rwth-aachen.de/go/id/dalko/lidx/1",
     "order": 3
   }
@@ -195,13 +204,16 @@
   "pk": 7,
   "fields": {
     "title": "Long-term monitoring of unstable rock slopes in a permafrost environment in Canton of Glarus, Switzerland",
+    "slug": "glarus-permafrost-rock-slopes",
     "summary": "",
     "image": "projects/karpf.jpg",
     "role": "Principal Investigator",
     "funder": "German Research Foundation (DFG)",
+    "partners": "",
     "start_year": 2021,
     "end_year": 2026,
     "status": "completed",
+    "body": "",
     "link": "",
     "order": 4
   }
@@ -211,13 +223,16 @@
   "pk": 8,
   "fields": {
     "title": "Einstein Telescope EMR Site & Technology (E-TEST)",
+    "slug": "e-test",
     "summary": "Feasibility study and geological inventory of the subsurface in the Euregio Meuse-Rhine to find a site for the Einstein Telescope gravitational-wave observatory. Led by the University of Liège with 11 universities and institutions from Belgium, the Netherlands and Germany.",
     "image": "",
     "role": "Principal Investigator at RWTH (with Florian Amann)",
     "funder": "Interreg V-A Euregio Meuse-Rhine",
+    "partners": "University of Liège (lead), UCLouvain, UHasselt, KU Leuven, RWTH Aachen University, Fraunhofer ILT, University of Bonn, NMWP, Maastricht University, KNMI, Nikhef",
     "start_year": 2020,
     "end_year": 2023,
     "status": "completed",
+    "body": "The Einstein Telescope (ET) is an advanced gravitational-wave observatory, currently in the planning stage, that will further our understanding of the Universe through the observation of gravitational waves. The border region between the Netherlands, Belgium and Germany (Euregio Meuse-Rhine) is being considered as a possible location because of its tranquillity and stable ground. The ET involves the construction of a triangular underground facility with 10 km long arms at a depth of 200–300 m below the surface. The underground structure will host multiple laser interferometers, each of which can detect ripples in the fabric of space-time. As an initial step, a feasibility study is carried out to determine whether the Einstein Telescope can be built in the Euregio Meuse-Rhine.\n\nThe E-TEST project is carried out within the framework of the [Interreg V-A Euregio Meuse-Rhine](https://www.interregemr.eu/projekte/e-test-de) programme, which is supported by the European Regional Development Fund (ERDF) with 7.5 million euros. By allocating EU funds to Interreg projects, the European Union invests directly in economic development, innovation, territorial development, social inclusion and education in the Euregio Meuse-Rhine. Further funding is provided by the Dutch Ministry of Economic Affairs, the State of North Rhine-Westphalia, the Province of Flemish Brabant, the Province of Belgian Limburg, the Province of Dutch Limburg, Flanders and Wallonia.\n\nUnder the leadership of the University of Liège, 11 universities and research institutions from Belgium, the Netherlands and Germany carry out the feasibility study. For this purpose, E-TEST takes an inventory of the underground in the Euregio Meuse-Rhine. The geological investigations started in mid-2020 and were planned to be completed by the end of 2022. A monitoring system and a geological model will be set up, allowing geological aspects such as groundwater levels and earthquakes to be modelled, simulated and predicted. The aim of the project is to find the best possible location for the Einstein Telescope in the Euregio Meuse-Rhine.\n\n## Contacts at RWTH\n\n- [Florian Amann](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Institutsleitung/~qaoh/Florian-Amann/lidx/1/)\n- Pooya Hamdi\n",
     "link": "https://www.lih.rwth-aachen.de/go/id/gtwmg/lidx/1",
     "order": 5
   }
@@ -227,13 +242,16 @@
   "pk": 9,
   "fields": {
     "title": "Rock Slope Response to Glacier Retreat (Grewingk Glacier and Lake, Alaska)",
+    "slug": "alaska-glacier-retreat",
     "summary": "",
     "image": "projects/alaska_axTYayf.jpg",
     "role": "Principal Investigator (with Anja Dufresne and Florian Amann)",
     "funder": "German Research Foundation (DFG)",
+    "partners": "",
     "start_year": 2020,
     "end_year": 2023,
     "status": "completed",
+    "body": "## Tsunamigenic landslides\n\nProject term: 2016 to 2020. Contact: [Anja Dufresne](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~qfrk/Anja-Dufresne/lidx/1/).\n\nAt least 24 large rock slope failures have occurred in Glacier Bay National Park in SE Alaska since 1984, as reported by Coe et al. (2018). The resulting rock avalanches cover areas between 5.5 and 22.2 km². Two of these events are studied by research groups that Anja Dufresne from the Department of Engineering Geology is collaborating with.\n\n## The 2015 rock slope failure and tsunami in Icy Bay\n\nThe October 2015 Tyndall Glacier rock avalanche caused one of the largest historic tsunamis in Alaska; the maximum wave runup height measured from field evidence was 192 m (Haeussler et al. 2017; Dufresne et al. 2018; Higman et al. 2018). Located in the remote Taan Fiord, an arm of Icy Bay, no people or infrastructure were affected, nor would this event have been noticed if it hadn't been recorded by the long-period seismic event detector at Lamont-Doherty Earth Observatory of Columbia University in New York (cf. Ekström and Stark 2013). The slope it originated from has shown signs of deformation since at least 1996 (Meigs et al. 2006); its catastrophic failure in 2015 released some 76 million m³ of rock, most of which now lies beneath fjord waters. A rapid response by an NSF-funded group of international researchers in the summer of 2016 gathered data, including bathymetry, aerial photographs, a high-resolution DEM, and structural and sedimentological field data, which only a few months later was already altered or destroyed by erosion, sedimentation and/or advance of the glacier terminus (Dufresne et al. 2018).\n\n### Weblinks\n\n- The National Park Service published our findings in their 2019 Alaska Park Science issue on Understanding and Preparing for Alaska's Geohazards: [nps.gov/articles/aps-18-1-2.htm](https://www.nps.gov/articles/aps-18-1-2.htm)\n- Our summary paper in Nature Scientific Reports covers all the work our team has started on the landslide and the tsunami, and how both impacted the landscape: [nature.com/articles/s41598-018-30475-w](https://www.nature.com/articles/s41598-018-30475-w)\n- A rerun of an article originally published in Alaska Magazine: [mjolnirofbjorn.com](http://www.mjolnirofbjorn.com/journal/2018/8/28/icy-bay-mega-tsunami)\n- The film telling our story by filmmaker and outdoor adventurer Bjørn Olson: [vimeo.com/200910490](https://vimeo.com/200910490)\n- Ground Truth Trekking, a treasure box of photos and stories of Alaska's wild country, with many stories on geology and the great outdoors: [groundtruthtrekking.org](http://www.groundtruthtrekking.org/slideshows/uploader-taan-main/)\n- Spektrum ran a story in 2016, interviewing our colleagues Göran Ekström and Colin Stark, who track landslides via remote seismic signal analysis: [spektrum.de](https://www.spektrum.de/news/bergrutsch-loest-riesentsunami-aus/1407195)\n\n### Publications\n\n- Higman B, Geertsema M, Shugar D, Lynett P, Dufresne A (2019). The 2015 Taan Fiord landslide and tsunami. Alaska Park Science, Understanding and Preparing for Alaska's Geohazards 18(1): 7–16.\n- Dufresne A, Wolken G, Hibert C, Bessette-Kirton E, Coe J, Geertsema M, Ekström G (2019). The 2016 Lamplugh rock avalanche, Alaska: Deposit structures and emplacement dynamics. Landslides, [doi.org/10.1007/s10346-019-01225-4](https://doi.org/10.1007/s10346-019-01225-4)\n- Higman B, Shugar D, Stark CP, Ekström G, Koppes M, Lynett P, Dufresne A, Haeussler P, Geertsema M, Gulick S, Mattox A, Venditti JG, Walton MAL, McCall N, McKittrick E, MacInnes B, Bilderback EL, Tang H, Willis MJ, Richmond B, Reece B, Larsen C, Olson B, Capra J, Ayca A, Bloom C, Williams H, Bonno D, Weiss R, Keen A, Skanavis V, Loso M (2018). The 2015 landslide and tsunami in Taan Fiord, Alaska. Nature Scientific Reports 8(12993).\n- Dufresne A, Geertsema M, Shugar D, Koppes M, Higman B, Haeussler P, Stark C, Venditti J, Bonno D, Larsen C, Gulick SPS, McCall N, Walton MA, Loso MG (2018). Sedimentology and geomorphology of a large tsunamigenic landslide, Taan Fiord, Alaska. Sedimentary Geology, Special Issue 'Evidence of Geohazards' 364: 302–318.\n\n### Conference presentations\n\n- Higman B, Dufresne A, Berg E, Geertsema M, Lynett P, Roberts N, Loso M (2019). Lessons from Taan Fiord and Lituya Bay: is Alaska's Grewingk Lake poised for catastrophe? AGU Fall Meeting, 9–13 December 2019, San Francisco, CA, USA.\n- Koppes MN, Williams H, Geertsema M, Dufresne A (2019). Hazards of a changing cryosphere: a comparison of glacial and paraglacial responses to rapid glacial retreat in coastal fjords. AGU Fall Meeting, 9–13 December 2019, San Francisco, CA, USA.\n- Dufresne A, Geertsema M, Shugar DH, Koppes M, Higman B, Haeussler PJ, Stark C, Venditti JG, Bonno D, Larsen C, Gulick SPS, McCall N, Walton M, Loso MG, Willis MJ (2018). The October 2015 tsunamigenic landslide in Taan Fiord, Alaska. EGU General Assembly, Vienna, Austria, 8–13 April 2018.\n- Haeussler PJ, Stark C, Ekström G, Gulick S, Higman B, Bloom C, Bilderback E, Dufresne A, Geertsema M, Guiltier L, Jaffe B, Koppes M, Labay K, Larsen C, Loso M, Lynett P, McCall N, Richmond B, Reece B, Shugar D, Venditti J, Walton M, Weiss R, Williams H (2017). The seismologically detected Taan Fiord landslide and tsunami of 17 October 2015: preliminary findings. Seismological Society of America Annual Meeting, Denver, Colorado, USA, 18–24 April 2017.\n- Geertsema M, Wolken G, Stark C, Dufresne A (2016). Large ice-rock avalanches in Glacier Bay National Park. Centennial Science and Stewardship Symposium, Fairbanks, Alaska, 19–21 October 2016.\n",
     "link": "https://www.lih.rwth-aachen.de/go/id/qwpq/lidx/1",
     "order": 6
   }
@@ -243,13 +261,16 @@
   "pk": 10,
   "fields": {
     "title": "Multidisciplinary Slope Stability Analysis, Hazard Assessment and Effective Mitigation Measures for Areas with Cultural and Social Significance",
+    "slug": "slope-stability-cultural-heritage",
     "summary": "",
     "image": "projects/civita.jpg",
     "role": "Principal Investigator",
     "funder": "German Research Foundation (DFG)",
+    "partners": "",
     "start_year": null,
     "end_year": null,
     "status": "completed",
+    "body": "",
     "link": "",
     "order": 7
   }
@@ -259,15 +280,128 @@
   "pk": 11,
   "fields": {
     "title": "Material Approach for Opalinus Clay",
+    "slug": "opalinus-clay",
     "summary": "Development and validation of a hydro-mechanical constitutive model for Opalinus Clay, based on laboratory triaxial tests and implemented in MOOSE.",
     "image": "",
     "role": "",
     "funder": "Swiss Federal Nuclear Safety Inspectorate (ENSI)",
+    "partners": "",
     "start_year": 2018,
     "end_year": 2021,
     "status": "completed",
+    "body": "Opalinus Clay, a Mesozoic shale formation, has been selected as the potential host rock for the disposal of high- and low-level nuclear waste in Switzerland. Beneficial characteristics of this formation include its low hydraulic conductivity, high radionuclide retention potential, and the potential for self-sealing of open cracks and fissures.\n\nThe aim of this project is to develop a fully coupled hydro-mechanical (HM) constitutive model to predict the physical behaviour of Opalinus Clay under various loading and unloading conditions. The key aspect is to integrate existing HM-coupled models supported by laboratory tests, field experiments and numerical simulations, and to develop, implement and validate a new constitutive model.\n\n## Phase 1.0 (2018–2022)\n\n### Experimental investigations\n\nIn the first phase of this project, we performed HM-coupled experiments using our state-of-the-art laboratory machines. We used our in-house technology to prepare, store, monitor and perform, for instance, drained or undrained triaxial compression tests under various configurations considering the material anisotropy. Post-failure analyses were carried out by analysing the deformation structures using electron microscopy.\n\n### Numerical investigations\n\nA transversely isotropic elasto-plastic model coupled with damage was implemented in the finite element code MOOSE Framework to describe the hydro-mechanical behaviour of Opalinus Clay. The model describes four deformation regimes observed in consolidated-undrained tests: (1) transversely isotropic elastic deformation, (2) plastic deformation with cross-anisotropic peak strength, (3) the post-failure regime, and (4) the residual strength state.\n\n### Main results of phase 1.0\n\nAn extensive testing campaign was conducted on Opalinus Clay specimens from the shaly facies sampled at the Mont Terri URL. Hydraulic properties were determined using different experimental methods, including the pore pressure oscillation technique, and the methods were evaluated in terms of their applicability, robustness and experimental times. Rock mechanical strength tests were performed for different suction values and different loading orientations. Furthermore, triaxial tests under consolidated-undrained conditions were performed under various boundary conditions to investigate the effect of effective stress and loading angle. Electron microscopy was carried out to study the microscale deformation processes and link the bulk hydro-mechanical observations to the underlying mechanics at the sub-millimetre level. The large amount of experimental data and analyses contributed substantially to the calibration of the new constitutive model and the implementation of fundamental behaviour characteristics of Opalinus Clay.\n\nA non-associated plastic model was implemented in the MOOSE Framework and coupled with a non-local damage model to describe the failure and post-failure behaviour of Opalinus Clay under undrained conditions. A series of consolidated-undrained experiments was used to calibrate the model and determine the required parameters for P-, Z- and S-specimens from the shaly facies of the Mont Terri URL. A large-scale 3D tunnel model was also developed to evaluate the performance of the implemented constitutive model against existing field data, such as pore pressure evolution, deformations and the excavation damage zone (EDZ).\n\n## Phase 2.0 (2022–2025)\n\n### Experimental investigations\n\nIn the second phase of this project, we perform long-term THM-coupled triaxial experiments to observe the time-dependent deformation behaviour of fully saturated samples under drained conditions. As in the first phase, the deformed specimens will be subjected to microstructural analysis (BIB-SEM) for a better understanding of creep mechanisms at the microscale in clay rocks. Multistage creep tests will be conducted considering the structural anisotropy and the effect of temperature on creep behaviour. Specimens with the bedding oriented either parallel or perpendicular to the loading axis will be tested under elevated temperature conditions. Additionally, sample material from the EDZ will be the subject of creep investigations to analyse the influence of damage on long-term creep behaviour.\n\n### Numerical investigations\n\nThe existing constitutive model will be calibrated against experiments performed on sample material from greater depth, i.e. from higher effective consolidation stresses. Additionally, a creep model will be implemented in MOOSE to simulate the time-dependent deformation observed in the creep tests. The focus will mainly be on steady-state and tertiary creep deformation under the influence of stress and temperature.\n\n## Project team\n\n- [Florian Amann](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Institutsleitung/~qaoh/Florian-Amann/lidx/1/)\n- [Mohammadreza Jalali](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~qhsw/Mohammadreza-Jalali/lidx/1/)\n- Kavan Khaledi (Fraunhofer IEG)\n- [Lisa Winhausen](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~qzhs/Lisa-Winhausen/lidx/1/)\n- [Lina Gotzen](https://www.lih.rwth-aachen.de/cms/LIH/Der-Lehrstuhl/Team/Ingenieurgeologie/~svlil/Lina-Gotzen/lidx/1/)\n\n## Selected publications\n\n- Winhausen L, Amann-Hildenbrand A, Fink R, Jalali M, Khaledi K, Hamdi P, Urai JL, Schmatz J, Amann F (2021). A comparative study on methods for determining the hydraulic properties of a clay shale. Geophysical Journal International 224(3): 1523–1539.\n- Khaledi K, Hamdi P, Winhausen L, Jalali M, Jaeggi D, Amann F (2021). Unloading induced absolute negative pore pressures in a low permeable clay shale. Engineering Geology 295: 106451.\n- Winhausen L, Klaver J, Schmatz J, Desbois G, Urai JL, Amann F, Nussbaum C (2021). Micromechanisms leading to shear failure of Opalinus Clay in a triaxial test: a high-resolution BIB–SEM study. Solid Earth 12(9): 2109–2126.\n- Winhausen L, Khaledi K, Jalali M, Urai JL, Amann F (2022). Failure mode transition in Opalinus Clay: a hydro-mechanical and microstructural perspective. Solid Earth 13(5): 901–915.\n",
     "link": "https://www.lih.rwth-aachen.de/go/id/rdsc/lidx/1",
     "order": 8
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 1,
+  "fields": {
+    "project": 4,
+    "image": "projects/precode-tunnel-boring.png",
+    "caption": "Boring a tunnel",
+    "credit": "",
+    "order": 1
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 2,
+  "fields": {
+    "project": 4,
+    "image": "projects/precode-numerical-modelling.png",
+    "caption": "Advanced numerical modelling",
+    "credit": "",
+    "order": 2
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 3,
+  "fields": {
+    "project": 4,
+    "image": "projects/precode-long-term-monitoring.png",
+    "caption": "Long-term monitoring",
+    "credit": "",
+    "order": 3
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 4,
+  "fields": {
+    "project": 4,
+    "image": "projects/precode-in-situ-monitoring.png",
+    "caption": "Intensive in-situ monitoring",
+    "credit": "",
+    "order": 4
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 5,
+  "fields": {
+    "project": 4,
+    "image": "projects/precode-laboratory-testing.png",
+    "caption": "Comprehensive laboratory testing",
+    "credit": "",
+    "order": 5
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 6,
+  "fields": {
+    "project": 5,
+    "image": "projects/3d-printed-sandstone.png",
+    "caption": "3D-printed synthetic sandstone with different configurations",
+    "credit": "",
+    "order": 1
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 7,
+  "fields": {
+    "project": 5,
+    "image": "projects/3d-printed-dfn-sample.jpg",
+    "caption": "3D-printed cylindrical sample containing a complex discrete fracture network (DFN)",
+    "credit": "",
+    "order": 2
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 8,
+  "fields": {
+    "project": 6,
+    "image": "projects/lady-peace-river-landslide.jpg",
+    "caption": "A retrogressive landslide in the Peace River region, British Columbia, Canada, blocked a small river and continues to deliver high sediment loads to the river network.",
+    "credit": "© LIH",
+    "order": 1
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 9,
+  "fields": {
+    "project": 8,
+    "image": "projects/e-test-structure.jpg",
+    "caption": "The Einstein Telescope gravitational-wave observatory will be situated at a depth of 200–300 m in the Euregio Meuse-Rhine landscape. The triangular underground facility with 10 km long arms allows for the installation of multiple laser interferometers.",
+    "credit": "© LIH",
+    "order": 1
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 10,
+  "fields": {
+    "project": 9,
+    "image": "projects/taan-fiord-rock-slope-failure.jpg",
+    "caption": "On 17 October 2015, a landslide of roughly 180 million tons of rock landed on the toe of Tyndall Glacier and in the water of Taan Fiord. It sent a tsunami wave that reached as high as 193 m on the opposite valley slopes.",
+    "credit": "© LIH",
+    "order": 1
   }
 },
 {
@@ -339,9 +473,8 @@
     "venue": "Journal of Rock Mechanics and Geotechnical Engineering 7 (6), 609-625",
     "year": 2015,
     "citations": 125,
-    "url": "",
-    "featured": true,
-    "scholar_id": ""
+    "url": "https://doi.org/10.1016/j.jrmge.2015.07.005",
+    "scholar_id": "QqegjnAAAAAJ:W7OEmFMy1HYC"
   }
 },
 {
@@ -352,10 +485,9 @@
     "authors": "P Hamdi, D Stead, D Elmo",
     "venue": "Computers and Geotechnics 60, 33-46",
     "year": 2014,
-    "citations": 81,
-    "url": "",
-    "featured": true,
-    "scholar_id": ""
+    "citations": 82,
+    "url": "https://doi.org/10.1016/j.compgeo.2014.03.011",
+    "scholar_id": "QqegjnAAAAAJ:IjCSPb-OGe4C"
   }
 },
 {
@@ -366,10 +498,9 @@
     "authors": "P Hamdi, D Stead, D Elmo, J Töyrä",
     "venue": "International Journal of Rock Mechanics and Mining Sciences 103, 55-67",
     "year": 2018,
-    "citations": 76,
-    "url": "",
-    "featured": true,
-    "scholar_id": ""
+    "citations": 78,
+    "url": "https://doi.org/10.1016/j.ijrmms.2018.01.021",
+    "scholar_id": "QqegjnAAAAAJ:qjMakFHDy7sC"
   }
 },
 {
@@ -381,9 +512,8 @@
     "venue": "Journal of Rock Mechanics and Geotechnical Engineering 14 (5), 1531-1544",
     "year": 2022,
     "citations": 33,
-    "url": "",
-    "featured": false,
-    "scholar_id": ""
+    "url": "https://doi.org/10.1016/j.jrmge.2021.12.017",
+    "scholar_id": "QqegjnAAAAAJ:UebtZRa9Y70C"
   }
 },
 {
@@ -394,10 +524,9 @@
     "authors": "M Entfellner, P Hamdi, X Wang, H Wannenmacher, F Amann",
     "venue": "Tunnelling and Underground Space Technology 140, 105261",
     "year": 2023,
-    "citations": 27,
-    "url": "",
-    "featured": false,
-    "scholar_id": ""
+    "citations": 9,
+    "url": "https://doi.org/10.1016/j.tust.2023.105261",
+    "scholar_id": "QqegjnAAAAAJ:LkGwnXOMwfcC"
   }
 },
 {
@@ -409,9 +538,8 @@
     "venue": "Engineering Geology 295, 106451",
     "year": 2021,
     "citations": 25,
-    "url": "",
-    "featured": false,
-    "scholar_id": ""
+    "url": "https://doi.org/10.1016/j.enggeo.2021.106451",
+    "scholar_id": "QqegjnAAAAAJ:roLk4NBRz8UC"
   }
 },
 {
@@ -422,10 +550,9 @@
     "authors": "L Winhausen, A Amann-Hildenbrand, R Fink, M Jalali, K Khaledi, ...",
     "venue": "Geophysical Journal International 224 (3), 1523-1539",
     "year": 2021,
-    "citations": 23,
-    "url": "",
-    "featured": false,
-    "scholar_id": ""
+    "citations": 24,
+    "url": "https://doi.org/10.1093/gji/ggaa532",
+    "scholar_id": "QqegjnAAAAAJ:ufrVoPGSRksC"
   }
 },
 {
@@ -437,9 +564,8 @@
     "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, ARMA-2017-1045",
     "year": 2017,
     "citations": 23,
-    "url": "",
-    "featured": false,
-    "scholar_id": ""
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:u5HHmVD_uO8C",
+    "scholar_id": "QqegjnAAAAAJ:u5HHmVD_uO8C"
   }
 },
 {
@@ -451,9 +577,8 @@
     "venue": "Rock Mechanics and Rock Engineering 57 (8), 5609-5635",
     "year": 2024,
     "citations": 15,
-    "url": "",
-    "featured": false,
-    "scholar_id": ""
+    "url": "https://doi.org/10.1007/s00603-024-03940-4",
+    "scholar_id": "QqegjnAAAAAJ:qxL8FJ1GzNcC"
   }
 },
 {
@@ -465,9 +590,554 @@
     "venue": "Landslides 21 (4), 775-789",
     "year": 2024,
     "citations": 15,
-    "url": "",
-    "featured": true,
-    "scholar_id": ""
+    "url": "https://doi.org/10.1007/s10346-023-02177-6",
+    "scholar_id": "QqegjnAAAAAJ:_kc_bZDykSQC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 22,
+  "fields": {
+    "title": "A modified discrete fracture network approach for geomechanical simulation",
+    "authors": "JM Mayer, P Hamdi, D Stead",
+    "venue": "Proceedings of the 1st International Conference on Discrete Fracture Network Engineering",
+    "year": 2014,
+    "citations": 15,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:2osOgNQ5qMEC",
+    "scholar_id": "QqegjnAAAAAJ:2osOgNQ5qMEC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 23,
+  "fields": {
+    "title": "Numerical simulation of damage during laboratory testing on rock using a 3D-FEMM/DEM approach",
+    "authors": "P Hamdi, D Stead, D Elmo",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, ARMA-2013-583",
+    "year": 2013,
+    "citations": 15,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:zYLM7Y9cAGgC",
+    "scholar_id": "QqegjnAAAAAJ:zYLM7Y9cAGgC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 24,
+  "fields": {
+    "title": "Understanding the Regional Stress in Active Tectonic Regime Using 3D Numerical Modeling, Case Study of BedrettoLab, Switzerland",
+    "authors": "P Hamdi, S Ufrecht, P Achtziger-Zupančič, K Bröker, X Ma, F Amann",
+    "venue": "Rock mechanics and rock engineering 58 (11), 12187-12206",
+    "year": 2025,
+    "citations": 12,
+    "url": "https://doi.org/10.1007/s00603-025-04740-0",
+    "scholar_id": "QqegjnAAAAAJ:hFOr9nPyWt4C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 25,
+  "fields": {
+    "title": "Characterization of Brittle Damage in Rock from the Micro to Macro Scale",
+    "authors": "P Hamdi",
+    "venue": "Science: Department of Earth Sciences",
+    "year": 2015,
+    "citations": 11,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:Tyk-4Ss8FVUC",
+    "scholar_id": "QqegjnAAAAAJ:Tyk-4Ss8FVUC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 26,
+  "fields": {
+    "title": "A multi-method investigation of the permeability structure of brittle fault zones with ductile precursors in crystalline rock",
+    "authors": "J Osten, T Schaber, G Gaus, P Hamdi, F Amann, P Achtziger-Zupančič",
+    "venue": "Grundwasser 29 (1), 49-61",
+    "year": 2024,
+    "citations": 9,
+    "url": "https://doi.org/10.1007/s00767-023-00561-6",
+    "scholar_id": "QqegjnAAAAAJ:M3ejUd6NZC8C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 27,
+  "fields": {
+    "title": "Activating a natural fault zone in the Swiss Alps",
+    "authors": "MA Meier, P Selvadurai, V Gischig, M Hertrich, E Tinti, AP Rinaldi, M Jalali, ...",
+    "venue": "Seismica 5 (1)",
+    "year": 2026,
+    "citations": 7,
+    "url": "https://seismica.library.mcgill.ca/article/view/2065",
+    "scholar_id": "QqegjnAAAAAJ:j3f4tGmQtD8C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 28,
+  "fields": {
+    "title": "A review of the application of numerical modelling in the prediction of depth of spalling damage around underground openings",
+    "authors": "P Hamdi, D Stead, D Elmo",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, ARMA-2017-0778",
+    "year": 2017,
+    "citations": 7,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:u-x6o8ySG0sC",
+    "scholar_id": "QqegjnAAAAAJ:u-x6o8ySG0sC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 29,
+  "fields": {
+    "title": "Einstein-Telescope in the Euregio-Meuse-Rhine–Preliminary engineering geological site characterization for siting and design",
+    "authors": "R Burchartz, M Waldvogel, N Chudalla, P Achtziger-Zupančič, ...",
+    "venue": "Bulletin of Engineering Geology and the Environment 84 (12), 609",
+    "year": 2025,
+    "citations": 6,
+    "url": "https://doi.org/10.1007/s10064-025-04623-2",
+    "scholar_id": "QqegjnAAAAAJ:_Qo2XoVZTnwC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 30,
+  "fields": {
+    "title": "Progressive development of a paraglacial rock slope failure at Portage Glacier, Alaska",
+    "authors": "E Lemaire, J Walden, B Higman, A Dufresne, P Hamdi, A Manconi, ...",
+    "venue": "Journal of Geophysical Research: Earth Surface 130 (11), e2024JF008255",
+    "year": 2025,
+    "citations": 6,
+    "url": "https://doi.org/10.1029/2024jf008255",
+    "scholar_id": "QqegjnAAAAAJ:RHpTSmoSYBkC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 31,
+  "fields": {
+    "title": "Assessing the effectiveness of toe buttressing on slope stability through monitoring and numerical modelling in a quarry in Germany",
+    "authors": "E Lemaire, L Fast, A Dufresne, P Hamdi, A Wehinger, FM Wagner, ...",
+    "venue": "Bulletin of Engineering Geology and the Environment 85 (1), 51",
+    "year": 2026,
+    "citations": 5,
+    "url": "https://doi.org/10.1007/s10064-025-04721-1",
+    "scholar_id": "QqegjnAAAAAJ:4JMBOYKVnBMC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 32,
+  "fields": {
+    "title": "Progressive Excavation Disturbance Zone Evolution During and Post Mine-By Tunneling (PRECODE) – Insight into a New Underground Research Laboratory for Crystalline Rocks in the BedrettoLab",
+    "authors": "P Hamdi, P Achtziger, J Dickmann, M Kruszewski, AP Rinaldi, L Villiger, ...",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, D041S047R002",
+    "year": 2024,
+    "citations": 5,
+    "url": "https://doi.org/10.56952/arma-2024-0543",
+    "scholar_id": "QqegjnAAAAAJ:mVmsd5A6BfQC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 33,
+  "fields": {
+    "title": "Intact rock properties of the Rotondo granite for the PRECODE Project in the BedrettoLab",
+    "authors": "MA Perras, Y Golabchi, N Bahrani, P Hamdi, F Amann",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, D032S037R009",
+    "year": 2024,
+    "citations": 5,
+    "url": "https://doi.org/10.56952/arma-2024-0438",
+    "scholar_id": "QqegjnAAAAAJ:4DMP91E08xMC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 34,
+  "fields": {
+    "title": "The assessment of intact rock strength for penetration",
+    "authors": "H Wannenmacher, P Hamdi, F Amann, T Marcher, T Frühwirt",
+    "venue": "Expanding Underground – Knowledge and Passion to Make a Positive Impact on the World",
+    "year": 2023,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:3fE2CSJIrl8C",
+    "scholar_id": "QqegjnAAAAAJ:aqlVkmm33-oC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 35,
+  "fields": {
+    "title": "Evaluating the Influence of Rock Bridge Characteristics: Rock Bridge Percentage and Spatial Location, on the Strength of a Synthetic Rock Mass–Experimental Approach",
+    "authors": "P Hamdi, F Amann",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, ARMA-2020-1142",
+    "year": 2020,
+    "citations": 4,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:_FxGoFyzp5QC",
+    "scholar_id": "QqegjnAAAAAJ:_FxGoFyzp5QC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 36,
+  "fields": {
+    "title": "DFN based analysis of step path failure pathways for improved slope stability analysis",
+    "authors": "S Rogers, P Hamdi, K Moffitt, W Dershowitz",
+    "venue": "Slope Stability Conference",
+    "year": 2018,
+    "citations": 3,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:blknAaTinKkC",
+    "scholar_id": "QqegjnAAAAAJ:blknAaTinKkC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 37,
+  "fields": {
+    "title": "The use of numerical methods in simulating the influence of geological structure on the surface subsidence associated with sub-level caving",
+    "authors": "P Hamdi, D Stead, D Elmo, J Töyrä",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, ARMA-2015-571",
+    "year": 2015,
+    "citations": 3,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:d1gkVwhDpl0C",
+    "scholar_id": "QqegjnAAAAAJ:d1gkVwhDpl0C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 38,
+  "fields": {
+    "title": "Characterizing the Influence of Micro-Heterogeneity on the Strength and Fracture of Rock using an FDEM-µDFN Approach",
+    "authors": "P Hamdi, D Stead, D Elmo",
+    "venue": "ISRM EUROCK, ISRM-EUROCK-2014-055",
+    "year": 2014,
+    "citations": 2,
+    "url": "https://doi.org/10.1201/b16955-59",
+    "scholar_id": "QqegjnAAAAAJ:Y0pCki6q_DkC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 39,
+  "fields": {
+    "title": "Exploring the brittle behavior of 3D-printed sandstone analogs under various stress conditions",
+    "authors": "D Shamsedine, P Hamdi, S Ishutov, G Zambrano-Narvaez, ...",
+    "venue": "Geomechanics and Geophysics for Geo-Energy and Geo-Resources 12 (1), 58",
+    "year": 2026,
+    "citations": 1,
+    "url": "https://doi.org/10.1007/s40948-025-01044-z",
+    "scholar_id": "QqegjnAAAAAJ:k_IJM867U9cC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 40,
+  "fields": {
+    "title": "Crack Initiation of Rotondo Granite during the PRECODE Mine-by Experiment in the BedrettoLab",
+    "authors": "M Kruszewski, P Hamdi, J Dickmann, F Amann, L Villiger, P Bianchi, ...",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, D041S037R005",
+    "year": 2026,
+    "citations": 1,
+    "url": "https://doi.org/10.56952/arma-2026-0091",
+    "scholar_id": "QqegjnAAAAAJ:JV2RwH3_ST0C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 41,
+  "fields": {
+    "title": "The influence of porosity on the damage induced by freeze-thaw cycles on fracture toughness",
+    "authors": "G Torsello, P Hamdi, F Amann, M Castelli, C Fidelibus",
+    "venue": "Engineering geology, 108891",
+    "year": 2026,
+    "citations": 1,
+    "url": "https://doi.org/10.1016/j.enggeo.2026.108891",
+    "scholar_id": "QqegjnAAAAAJ:maZDTaKrznsC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 42,
+  "fields": {
+    "title": "High-Resolution Terrestrial Laser Scanning Point Clouds and Surface Meshes from the Bedretto Tunnel",
+    "authors": "P Hamdi",
+    "venue": "ETH Zurich",
+    "year": 2026,
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:NMxIlDl6LWMC",
+    "scholar_id": "QqegjnAAAAAJ:NMxIlDl6LWMC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 43,
+  "fields": {
+    "title": "FEAR borehole trajectories: Bedretto Lab Fault Activation and Earthquake Rupture project",
+    "authors": "A Shakas, M Hertrich, V Gischig, D Giardini, MA Meier, M Wimez, ...",
+    "venue": "ETH Zurich",
+    "year": 2026,
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:bEWYMUwI8FkC",
+    "scholar_id": "QqegjnAAAAAJ:bEWYMUwI8FkC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 44,
+  "fields": {
+    "title": "Evaluation of the Civita di Bagnoregio Plateau evolution through multi-temporal remote sensing methods",
+    "authors": "E Lemaire, P Hamdi, M Francioni, D Donati, L Borgatti",
+    "venue": "Rivista italiana di geotecnica: LIX, 2/3, 2025, 40-51",
+    "year": 2025,
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:R3hNpaxXUhUC",
+    "scholar_id": "QqegjnAAAAAJ:R3hNpaxXUhUC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 45,
+  "fields": {
+    "title": "The assessment of intact rock strength for penetration rate prediction",
+    "authors": "H Wannenmacher, P Hamdi, F Amann, T Marcher, T Frühwirt",
+    "venue": "Expanding Underground – Knowledge and Passion to Make a Positive Impact on the World",
+    "year": 2023,
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:kNdYIx-mwKoC",
+    "scholar_id": "QqegjnAAAAAJ:kNdYIx-mwKoC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 46,
+  "fields": {
+    "title": "Construction of 3D Discrete Fracture Network Model using Structural and Hydrogeological Data",
+    "authors": "M Jalali, F Zhen, P Hamdi",
+    "venue": "EGU General Assembly",
+    "year": 2020,
+    "citations": 1,
+    "url": "https://doi.org/10.5194/egusphere-egu2020-16033",
+    "scholar_id": "QqegjnAAAAAJ:WF5omc3nYNoC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 47,
+  "fields": {
+    "title": "Understanding spatial and temporal evolution of progressive excavation damage zone in granitic rocks – development of a novel mine-by and laboratory experimental framework at the BedrettoLab",
+    "authors": "P Hamdi, J Dickmann, M Kruszewski, AP Rinaldi, L Villiger, A Shakas, ...",
+    "venue": "Solid Earth 17 (10), 1139-1165",
+    "year": 2026,
+    "citations": 0,
+    "url": "https://doi.org/10.5194/se-17-1139-2026",
+    "scholar_id": "QqegjnAAAAAJ:hMod-77fHWUC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 48,
+  "fields": {
+    "title": "Environmental Effects on Sub-Critical Crack Growth and Stress Corrosion in Rotondo Granite from BedrettoLab, Switzerland",
+    "authors": "P Hamdi, A Herzog, J Dickmann, E Lemaire, M Perras, M kruszewski, ...",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, D041S031R002",
+    "year": 2026,
+    "citations": 0,
+    "url": "https://doi.org/10.56952/arma-2026-0040",
+    "scholar_id": "QqegjnAAAAAJ:M3NEmzRMIkIC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 49,
+  "fields": {
+    "title": "FDEM numerical calibration of mechanical properties of tuffaceous rocks for slope stability analysis",
+    "authors": "M Montagnese, F Feliziani, GM Marmoni, G Grechi, E Lemaire, P Hamdi, ...",
+    "venue": "EGU26",
+    "year": 2026,
+    "citations": 0,
+    "url": "https://doi.org/10.5194/egusphere-egu26-14093",
+    "scholar_id": "QqegjnAAAAAJ:isC4tDSrTZIC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 50,
+  "fields": {
+    "title": "Structural and Kinematic Controls on Paraglacial Rock Slope Deformation at Portage Glacier, Alaska",
+    "authors": "E Lemaire, P Hamdi, A Dufresne, B Higman, J Walden, A Manconi, ...",
+    "venue": "EGU26",
+    "year": 2026,
+    "citations": 0,
+    "url": "https://doi.org/10.5194/egusphere-egu26-2146",
+    "scholar_id": "QqegjnAAAAAJ:iH-uZ7U-co4C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 51,
+  "fields": {
+    "title": "Short-term Permeability Evolution Within the Excavation Damage Zone Around a Deep Tunnel in the Rotondo Granite",
+    "authors": "J Dickmann, P Hamdi, M Kruszewski, P Achtziger-Zupančič, S Wiemer, ...",
+    "venue": "EGU26",
+    "year": 2026,
+    "citations": 0,
+    "url": "https://doi.org/10.5194/egusphere-egu26-17620",
+    "scholar_id": "QqegjnAAAAAJ:TFP_iSt0sucC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 52,
+  "fields": {
+    "title": "GARBI F., MARGOTTI I C., BRA CALEO I R., SO",
+    "authors": "E LEMAIRE, P HAMDI, IM FRA CIO, D DO ATI, L BORGATTI, D STEAD",
+    "venue": "RIVISTA ITALIANA DI GEOTECNICA 11, 25",
+    "year": 2025,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:r0BpntZqJG4C",
+    "scholar_id": "QqegjnAAAAAJ:r0BpntZqJG4C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 53,
+  "fields": {
+    "title": "Short-Term Evolution of Excavation Damage Zone during PRECODE Mine-by Tunneling at BedrettoLab",
+    "authors": "P Hamdi, J Dickmann, M Kruszewski, P Achtziger-Zupancic, A Rinaldi, ...",
+    "venue": "EGU General Assembly Conference Abstracts, EGU25-16953",
+    "year": 2025,
+    "citations": 0,
+    "url": "https://doi.org/10.5194/egusphere-egu25-16953",
+    "scholar_id": "QqegjnAAAAAJ:qUcmZB5y_30C"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 54,
+  "fields": {
+    "title": "Predicting Excavation-Induced Damage Depth at the Bedretto Tunnel: A Methodological Comparison",
+    "authors": "S Golabchi, Y., Alsop, O., Perras, M., Khan, U., Alcaino-Olivares, R ...",
+    "venue": "Conference: ROCKENG 2025At: Montreal, Canada",
+    "year": 2025,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:HDshCWvjkbEC",
+    "scholar_id": "QqegjnAAAAAJ:HDshCWvjkbEC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 55,
+  "fields": {
+    "title": "Mode I fracture toughness of a low-porosity rock subjected to freeze-thaw cycles",
+    "authors": "G Torsello, P Hamdi, F Amann, M Castelli, R Bellopede, C Fidelibus",
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:-f6ydRqryjwC",
+    "scholar_id": "QqegjnAAAAAJ:-f6ydRqryjwC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 56,
+  "fields": {
+    "title": "Modeling Coupled Hydro-Mechanical Effects during PRECODE Tunnel Excavation in Rotondo Granite",
+    "authors": "FA Michal Kruszewski, Pooya Hamdi, Jonas Dickmann, Kavan Khaledi, Antonio ...",
+    "venue": "EGU General Assembly",
+    "year": 2025,
+    "citations": 0,
+    "url": "https://doi.org/10.5194/egusphere-egu25-18665",
+    "scholar_id": "QqegjnAAAAAJ:hC7cP41nSMkC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 57,
+  "fields": {
+    "title": "Numerical Calibration of Laboratory Results of 3D Printed Sandstone Analogues Using Finite/Discrete Element Method (FDEM)",
+    "authors": "D Shamsedine, P Hamdi, F Amann",
+    "venue": "ISRM Congress, ISRM-15CONGRESS-2023-324",
+    "year": 2023,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:4TOpqqG69KYC",
+    "scholar_id": "QqegjnAAAAAJ:4TOpqqG69KYC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 58,
+  "fields": {
+    "title": "Evaluation of factors that led to the 1967 paraglacial slope failure at Grewingk Lake and Glacier, Alaska",
+    "authors": "E Lemaire, A Dufresne, P Hamdi, B Higman, F Amann",
+    "venue": "EGU General Assembly Conference Abstracts, EGU-12711",
+    "year": 2023,
+    "citations": 0,
+    "url": "https://doi.org/10.5194/egusphere-egu23-12711",
+    "scholar_id": "QqegjnAAAAAJ:8k81kl-MbHgC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 59,
+  "fields": {
+    "title": "Retraction notice to \"Investigating High-Strength Expanded Polystyrene (HS-EPS) as yielding support elements for tunnelling in squeezing ground conditions\" [Tunn. Undergr. Space Technol. 118 (2021) 104186]",
+    "authors": "M Entfellner, P Hamdi, X Wang, H Wannenmacher, F Amann",
+    "venue": "Tunnelling and Underground Space Technology incorporating Trenchless Technology Research",
+    "year": 2023,
+    "citations": 0,
+    "url": "https://doi.org/10.1016/j.tust.2022.104864",
+    "scholar_id": "QqegjnAAAAAJ:ZeXyd9-uunAC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 60,
+  "fields": {
+    "title": "Multidisciplinary Slope Stability Analysis Applied to Cultural and Natural Heritage Sites in Central Italy",
+    "authors": "D Hamdi, P., Lemaire, E., Burchartz, R., Francioni, M., Donati, D., Borgatti ...",
+    "venue": "6th World Landslide Forum, 14–17 November 2023",
+    "year": 2023,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:mB3voiENLucC",
+    "scholar_id": "QqegjnAAAAAJ:mB3voiENLucC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 61,
+  "fields": {
+    "title": "incorporating Trenchless Technology Research",
+    "authors": "M Entfellner, P Hamdi, X Wang, H Wannenmacher, F Amann",
+    "venue": "Tunnelling and Underground Space Technology 140, 105261",
+    "year": 2023,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:Zph67rFs4hoC",
+    "scholar_id": "QqegjnAAAAAJ:Zph67rFs4hoC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 62,
+  "fields": {
+    "title": "Evaluation of the Influence of Uncertainty Between Predicted and Measured Ground Water and In-Situ Stress on the Stability of a Large Open Pit Using a Three Dimensional Distinct Element Method",
+    "authors": "P Hamdi, C Griffiths, S D'Ambra",
+    "venue": "ARMA US Rock Mechanics/Geomechanics Symposium, ARMA-2017-0877",
+    "year": 2017,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:UeHWp8X0CEIC",
+    "scholar_id": "QqegjnAAAAAJ:UeHWp8X0CEIC"
+  }
+},
+{
+  "model": "core.publication",
+  "pk": 63,
+  "fields": {
+    "title": "Short-Term Pore Pressure Evolution around Tunnels in Opalinus Clay: Lessons Learned from an Overcoring Experiment",
+    "authors": "K Khaledi, P Hamdi, L Winhausen, M Jalali, F Amann",
+    "venue": "",
+    "year": null,
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=QqegjnAAAAAJ&pagesize=100&citation_for_view=QqegjnAAAAAJ:hqOjcs7Dif8C",
+    "scholar_id": "QqegjnAAAAAJ:hqOjcs7Dif8C"
   }
 }
 ]

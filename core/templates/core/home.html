@@ -57,7 +57,7 @@
 <section class="citations" aria-labelledby="citations-h">
   <div class="section-head">
     <h2 id="citations-h">Citations</h2>
-    {% if profile.scholar_url %}<a class="small-link" href="{{ profile.scholar_url }}" rel="noopener">Google Scholar profile →</a>{% endif %}
+    {% if profile.scholar_url %}<a class="small-link" href="{{ profile.scholar_url }}" target="_blank" rel="noopener">Google Scholar profile →</a>{% endif %}
   </div>
   <dl class="stat-tiles">
     <div class="stat"><dt>Citations</dt><dd>{{ stats.citations }}</dd>{% if stats.recent_since %}<span class="stat-sub">{{ stats.citations_recent }} since {{ stats.recent_since }}</span>{% endif %}</div>
