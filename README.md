@@ -28,6 +28,8 @@ Open http://127.0.0.1:8000. The editor is at http://127.0.0.1:8000/admin.
 
 Entries containing `TODO` are placeholders to replace.
 
+Uploaded photos are scaled down automatically to at most 1600px on the long side, so you can upload them straight from a phone or camera. `manage.py shrink_images` does the same for photos already in `media/`.
+
 ## Citations from Google Scholar
 
 ```bash

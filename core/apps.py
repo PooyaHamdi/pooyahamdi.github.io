@@ -6,4 +6,4 @@ class CoreConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
 
     def ready(self):
-        from . import content  # noqa: F401  (connects the auto-export signals)
+        from . import content, images  # noqa: F401  (connect the auto-export and image-shrinking signals)

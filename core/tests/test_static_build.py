@@ -35,3 +35,20 @@ class StaticBuildTests(TestCase):
             data = json.loads(target.read_text())
             profile = next(o for o in data if o["model"] == "core.profile")
             self.assertEqual(profile["fields"]["tagline"], "exported tagline")
+
+
+class ImageShrinkTests(TestCase):
+    def test_large_upload_is_shrunk(self):
+        from io import BytesIO
+
+        from django.core.files.uploadedfile import SimpleUploadedFile
+        from PIL import Image
+
+        from core.models import Project
+
+        buf = BytesIO()
+        Image.new("RGB", (4000, 3000), "red").save(buf, "JPEG")
+        with tempfile.TemporaryDirectory() as tmp, override_settings(MEDIA_ROOT=tmp):
+            p = Project.objects.create(title="Big photo", image=SimpleUploadedFile("big.jpg", buf.getvalue()))
+            with Image.open(p.image.path) as saved:
+                self.assertEqual(max(saved.size), 1600)
