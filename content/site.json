@@ -295,6 +295,25 @@
   }
 },
 {
+  "model": "core.project",
+  "pk": 12,
+  "fields": {
+    "title": "Impact of Stress Corrosion and Long-Term Strength of Crystalline Rocks on Barrier Integrity –  From Micro-to-Macro Scale",
+    "slug": "ACCELERATE",
+    "summary": "ACCELERATE aims to improve the understanding and prediction of time-dependent fracturing and long-\r\nterm strength of crystalline rocks. The results will contribute to more reliable assessments of excavation\r\ndamage and the long-term integrity of crystalline host rocks, supporting the scientific basis for the safe\r\ndesign of deep geological repositories in Germany. The",
+    "image": "projects/Accelerate_Logo.png",
+    "role": "Principal Investigator",
+    "funder": "Federal Ministry for the Environment, Climate Action, Nature Conservation and Nuclear Safety (BMUKN)",
+    "partners": "TU Bergakademie Freiberg – Chair of Rock Mechanics and Rock Engineering",
+    "start_year": 2026,
+    "end_year": null,
+    "status": "ongoing",
+    "body": "The safe disposal of radioactive waste in deep geological repositories requires a thorough understanding\r\nof the long-term mechanical behavior and integrity of the surrounding host rocks. Although the short-term\r\nstrength of crystalline rocks is relatively well understood, their long-term behavior and the evolution of\r\nexcavation-induced damage remain important scientific challenges. The ACCELERATE project aims to\r\naddress these knowledge gaps by investigating the short- and long-term strength of crystalline rocks\r\nunder repository-relevant conditions. A particular focus is placed on sub-critical crack growth and stress\r\ncorrosion, examining how temperature, relative humidity, pressure and water chemistry influence time-\r\ndependent fracture propagation and rock strength.\r\nThe project combines comprehensive laboratory experiments, microstructural investigations, advanced\r\nnumerical modelling and field observations. Selected crystalline rock formations within Germany are\r\ninvestigated through geomechanical, petrophysical and geochemical testing, including double torsion,\r\nfracture toughness and static fatigue experiments. Microstructural analyses are used to characterize\r\ncrack initiation and propagation, while numerical modelling aims to predict the development of brittle\r\ndamage and the excavation damage zone (EDZ) over extended periods. Laboratory findings are linked to\r\nin-situ observations from the BedrettoLab in Switzerland, particularly within the framework of the\r\nPRECODE project.\r\nACCELERATE aims to improve the understanding and prediction of time-dependent fracturing and long-\r\nterm strength of crystalline rocks. The results will contribute to more reliable assessments of excavation\r\ndamage and the long-term integrity of crystalline host rocks, supporting the scientific basis for the safe\r\ndesign of deep geological repositories in Germany. The project will also contribute to an open-access\r\ndatabase of geotechnical properties and promote knowledge exchange through scientific publications,\r\nworkshops and training activities.",
+    "link": "",
+    "order": 0
+  }
+},
+{
   "model": "core.projectimage",
   "pk": 1,
   "fields": {

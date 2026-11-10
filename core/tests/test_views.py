@@ -108,3 +108,34 @@ class ProjectPageTests(TestCase):
 
     def test_unknown_project_404(self):
         self.assertEqual(self.client.get("/research/nope/").status_code, 404)
+
+
+class CardImageTests(TestCase):
+    def setUp(self):
+        import tempfile
+
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        override = self.settings(MEDIA_ROOT=tmp.name)
+        override.enable()
+        self.addCleanup(override.disable)
+
+    def _project(self, size):
+        from io import BytesIO
+
+        from django.core.files.uploadedfile import SimpleUploadedFile
+        from PIL import Image
+
+        from core.models import Project
+
+        buf = BytesIO()
+        Image.new("RGB", size, "white").save(buf, "PNG")
+        return Project.objects.create(title=f"P {size}", image=SimpleUploadedFile("i.png", buf.getvalue()))
+
+    def test_logo_shown_whole_photo_cropped(self):
+        logo = self._project((1000, 200))
+        photo = self._project((800, 600))
+        self.assertTrue(logo.image_is_wide)
+        self.assertFalse(photo.image_is_wide)
+        r = self.client.get(reverse("research"))
+        self.assertContains(r, 'class="card-image card-image-whole"', count=1)

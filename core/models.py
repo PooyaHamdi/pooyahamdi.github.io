@@ -154,6 +154,14 @@ class Project(models.Model):
         return reverse("project", args=[self.slug])
 
     @property
+    def image_is_wide(self):
+        """Logos and banners (over 2:1) are shown whole on the card instead of cropped to fill it."""
+        try:
+            return bool(self.image) and self.image.width > 2 * self.image.height
+        except (OSError, ValueError):
+            return False
+
+    @property
     def has_page(self):
         """Only projects with something beyond the card get a clickable page."""
         return bool(self.body.strip()) or self.images.exists()
